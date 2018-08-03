@@ -1,0 +1,2530 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10500.18.0305.1200                               -->
+<workbook original-version='10.5' source-build='10.5.2 (10500.18.0305.1200)' source-platform='win' version='10.5' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='Q3_224' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Sheet1 (final)' inline='true' name='federated.18etttg1po300a1eecj8p1d9gwix' version='10.5'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='final' name='excel-direct.1vp9v2t04ghsu5179usxv1fsr1ug'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='E:/Business Nanodegree/Project-5/project3-1/final2.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.1vp9v2t04ghsu5179usxv1fsr1ug' name='Sheet1' table='[Sheet1$]' type='table'>
+          <columns gridOrigin='A1:T10001:no:A1:T2147483647:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Field_1' ordinal='0' />
+            <column datatype='string' name='imdb_id' ordinal='1' />
+            <column datatype='real' name='popularity' ordinal='2' />
+            <column datatype='integer' name='budget' ordinal='3' />
+            <column datatype='integer' name='revenue' ordinal='4' />
+            <column datatype='string' name='original_title' ordinal='5' />
+            <column datatype='string' name='cast' ordinal='6' />
+            <column datatype='string' name='director' ordinal='7' />
+            <column datatype='string' name='keywords' ordinal='8' />
+            <column datatype='real' name='runtime' ordinal='9' />
+            <column datatype='string' name='genres' ordinal='10' />
+            <column datatype='string' name='production_companies' ordinal='11' />
+            <column datatype='date' name='release_date' ordinal='12' />
+            <column datatype='real' name='vote_count' ordinal='13' />
+            <column datatype='integer' name='vote_average' ordinal='14' />
+            <column datatype='integer' name='release_year' ordinal='15' />
+            <column datatype='real' name='budget_adj' ordinal='16' />
+            <column datatype='real' name='revenue_adj' ordinal='17' />
+            <column datatype='string' name='release_month' ordinal='18' />
+            <column datatype='integer' name='release_month_num' ordinal='19' />
+          </columns>
+        </relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Field_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Field_1]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>Field_1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>imdb_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[imdb_id]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>imdb_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>popularity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[popularity]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>popularity</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>budget</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[budget]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>budget</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[revenue]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>revenue</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>original_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[original_title]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>original_title</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cast</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[cast]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>cast</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>director</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[director]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>director</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>keywords</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[keywords]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>keywords</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>runtime</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[runtime]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>runtime</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>genres</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[genres]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>genres</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>production_companies</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[production_companies]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>production_companies</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[release_date]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>release_date</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vote_count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[vote_count]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>vote_count</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>vote_average</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[vote_average]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>vote_average</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>budget_adj</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[budget_adj]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>budget_adj</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue_adj</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revenue_adj]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>revenue_adj</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_month</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[release_month]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>release_month</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_month_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_month_num]</local-name>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias>release_month_num</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sheet1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>4</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:T10001:no:A1:T2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Profit Adj' datatype='real' name='[Calculation_673569642447269888]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[revenue_adj]-[budget_adj]' />
+      </column>
+      <column caption='Profit' datatype='integer' name='[Calculation_673569642447650817]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[revenue]-[budget]' />
+      </column>
+      <column caption='Producers' datatype='string' name='[Calculation_750130836133322752]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF CONTAINS([production_companies], &quot;Universal&quot;)&#13;&#10;THEN &quot;Universal&quot;&#13;&#10;ELSEIF CONTAINS([production_companies], &quot;Paramount&quot;)&#13;&#10;THEN &quot;Paramount&quot;&#13;&#10;END' />
+      </column>
+      <column caption='Field 1' datatype='integer' name='[Field_1]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Budget' datatype='integer' name='[budget]' role='measure' type='quantitative' />
+      <column caption='Budget Adj' datatype='real' name='[budget_adj]' role='measure' type='quantitative' />
+      <column caption='Cast' datatype='string' name='[cast]' role='dimension' type='nominal' />
+      <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+      <column caption='Genres' datatype='string' name='[genres]' role='dimension' type='nominal' />
+      <column caption='Imdb Id' datatype='string' name='[imdb_id]' role='dimension' type='nominal' />
+      <column caption='Movies_group' datatype='string' name='[keywords (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[keywords]' default='&quot;Not based on novel&quot;' new-bin='true'>
+          <bin default-name='false' value='&quot;Based on novel&quot;'>
+            <value>&quot;1970s|teenage girl|older man younger woman relationship|based on graphic novel|teenage sexuality&quot;</value>
+            <value>&quot;adolescence|based on novel|loss of child|fight|chase&quot;</value>
+            <value>&quot;adultery|based on novel|love|lieutenant|tragedy&quot;</value>
+            <value>&quot;adultery|journalist|based on novel|newspaper|unfaithfulness&quot;</value>
+            <value>&quot;adultery|robbery|based on novel|professor|college&quot;</value>
+            <value>&quot;africa|based on novel|child soldier&quot;</value>
+            <value>&quot;alcohol|based on novel|burglar|trainer|police&quot;</value>
+            <value>&quot;alcohol|sex|detective|confession|based on novel&quot;</value>
+            <value>&quot;ambush|helicopter|journalist|based on novel|airport&quot;</value>
+            <value>&quot;amsterdam|based on novel|support group|cancer|teenager&quot;</value>
+            <value>&quot;angel|based on novel|supernatural|fallen angel|orphan&quot;</value>
+            <value>&quot;angel|sex|robbery|based on novel|karaoke&quot;</value>
+            <value>&quot;based on graphic novel|ancient greece|duringcreditsstinger|sea battle|hand to hand combat&quot;</value>
+            <value>&quot;based on graphic novel|homework|shot in the chin|soft boiled egg|learning to drive&quot;</value>
+            <value>&quot;based on graphic novel|multiple personality|psychiatric&quot;</value>
+            <value>&quot;based on novel&quot;</value>
+            <value>&quot;based on novel|1970s|private investigator|smoking marijuana|los angeles&quot;</value>
+            <value>&quot;based on novel|1970s|thanksgiving|dysfunctional family|independent film&quot;</value>
+            <value>&quot;based on novel|adoption|pregnant|miscarriage|expectant father&quot;</value>
+            <value>&quot;based on novel|army|love|u.s. soldier|nicholas sparks&quot;</value>
+            <value>&quot;based on novel|art student|cowboys|injury|bull riding&quot;</value>
+            <value>&quot;based on novel|attack|massacre|private&quot;</value>
+            <value>&quot;based on novel|australia|dressmaker|hometown|woman director&quot;</value>
+            <value>&quot;based on novel|baltimore|kidnapping|missing child|baltimore maryland&quot;</value>
+            <value>&quot;based on novel|billionaire|bdsm|woman director|erotic movie&quot;</value>
+            <value>&quot;based on novel|biography|based on true story&quot;</value>
+            <value>&quot;based on novel|biography|historical figure|marilyn monroe&quot;</value>
+            <value>&quot;based on novel|biography|police|woods|ufo&quot;</value>
+            <value>&quot;based on novel|brother sister relationship|canada|village|love&quot;</value>
+            <value>&quot;based on novel|burning of witches|puritan|period piece|pregnancy&quot;</value>
+            <value>&quot;based on novel|callboy|romantic comedy|wedding|escort&quot;</value>
+            <value>&quot;based on novel|canada|island|chicken|horse&quot;</value>
+            <value>&quot;based on novel|carpet|isolation|imprisonment|grandparents&quot;</value>
+            <value>&quot;based on novel|celebrity|based on true story|gay relationship|gay interest&quot;</value>
+            <value>&quot;based on novel|cemetery|isolation|stage|nudity&quot;</value>
+            <value>&quot;based on novel|character name in title|middle school&quot;</value>
+            <value>&quot;based on novel|character name in title|police detective&quot;</value>
+            <value>&quot;based on novel|charles dickens&quot;</value>
+            <value>&quot;based on novel|comedian|job|love|male female relationship&quot;</value>
+            <value>&quot;based on novel|coming of age|duringcreditsstinger&quot;</value>
+            <value>&quot;based on novel|coming of age|young boy|middle school|popularity&quot;</value>
+            <value>&quot;based on novel|commercial|brother sister relationship|secret|kiss&quot;</value>
+            <value>&quot;based on novel|desperation|robber|hold-up robbery|remake&quot;</value>
+            <value>&quot;based on novel|dinosaur|sir arthur conan doyle|lost continent&quot;</value>
+            <value>&quot;based on novel|drug dealer|ex-cop|rural setting|undercover cop&quot;</value>
+            <value>&quot;based on novel|dystopia|love|teenager|failed tv pilot&quot;</value>
+            <value>&quot;based on novel|dystopia|youth|dystopic future|caste system&quot;</value>
+            <value>&quot;based on novel|faith|based on true events&quot;</value>
+            <value>&quot;based on novel|fictional place|lion|human being|wretch&quot;</value>
+            <value>&quot;based on novel|fictional place|queen|alice in wonderland|fantastic&quot;</value>
+            <value>&quot;based on novel|fictional place|wolf|mythology|magic&quot;</value>
+            <value>&quot;based on novel|foster sister|moor|yorkshire england|foster family&quot;</value>
+            <value>&quot;based on novel|fox|foxhunting|friendship|dog&quot;</value>
+            <value>&quot;based on novel|friendship|coming of age|railroad track|story within the story&quot;</value>
+            <value>&quot;based on novel|funeral|dysfunctional family|death of father|man child&quot;</value>
+            <value>&quot;based on novel|garden|loss of parents|magic potion|aunt&quot;</value>
+            <value>&quot;based on novel|gold|treasure|coffin|human being-animal relationship&quot;</value>
+            <value>&quot;based on novel|harvard university|college|drama|cancer&quot;</value>
+            <value>&quot;based on novel|haunted house|gothic horror|made for television&quot;</value>
+            <value>&quot;based on novel|haunted house|supernatural|sequel|haunting&quot;</value>
+            <value>&quot;based on novel|high school|teenager|teen comedy|multiple storylines&quot;</value>
+            <value>&quot;based on novel|high society|imperial russia|saint petersburg|tragic death&quot;</value>
+            <value>&quot;based on novel|independent film&quot;</value>
+            <value>&quot;based on novel|indian|servant|secret|garden&quot;</value>
+            <value>&quot;based on novel|infidelity|obsession|hope|3d&quot;</value>
+            <value>&quot;based on novel|interracial relationship|single mother|divorce|chick flick&quot;</value>
+            <value>&quot;based on novel|intolerance|chosen one|child prodigy|futuristic&quot;</value>
+            <value>&quot;based on novel|island|hurricane|investigation|psychiatric hospital&quot;</value>
+            <value>&quot;based on novel|japanese|world war ii|battle assignment|invasion&quot;</value>
+            <value>&quot;based on novel|job interview|bad luck|wish|one day&quot;</value>
+            <value>&quot;based on novel|key|scavenger hunt|death of father|young boy&quot;</value>
+            <value>&quot;based on novel|loser|magazine|womanizer|mission&quot;</value>
+            <value>&quot;based on novel|love|beautiful woman|curse|teenager&quot;</value>
+            <value>&quot;based on novel|magic|fantasy|family|3d&quot;</value>
+            <value>&quot;based on novel|magic|good vs evil|king|narnia&quot;</value>
+            <value>&quot;based on novel|make a match|jane austen|matchmaking&quot;</value>
+            <value>&quot;based on novel|male female relationship|teenage pregnancy|best friends in love|missed opportunity&quot;</value>
+            <value>&quot;based on novel|mars|medaillon|cave|future&quot;</value>
+            <value>&quot;based on novel|mars|nasa|isolation|botanist&quot;</value>
+            <value>&quot;based on novel|mass murder|dystopia|two word title|genocide&quot;</value>
+            <value>&quot;based on novel|maze|post-apocalyptic|dystopia|escape&quot;</value>
+            <value>&quot;based on novel|mentor|secret|factory|television&quot;</value>
+            <value>&quot;based on novel|middle school|female lead|woman director&quot;</value>
+            <value>&quot;based on novel|mother daughter relationship|chinese|family|chinese american&quot;</value>
+            <value>&quot;based on novel|murder|mafia|private investigator|new york city&quot;</value>
+            <value>&quot;based on novel|musical|color in title|based on stage musical|woman director&quot;</value>
+            <value>&quot;based on novel|musical|drug|cult classic&quot;</value>
+            <value>&quot;based on novel|mythical creature|dragon|fantasy world|teenage hero&quot;</value>
+            <value>&quot;based on novel|nasa|new mexico|extraterrestrial technology|prime number&quot;</value>
+            <value>&quot;based on novel|new love|love of one&apos;s life|retiree|aging&quot;</value>
+            <value>&quot;based on novel|nightmare|stranger&quot;</value>
+            <value>&quot;based on novel|obsession|hero|harpoon|revenge&quot;</value>
+            <value>&quot;based on novel|optimism|switzerland|baseball|famous score&quot;</value>
+            <value>&quot;based on novel|painting|debt|art dealer|stolen painting&quot;</value>
+            <value>&quot;based on novel|paralysis|revenge|rage|monkey&quot;</value>
+            <value>&quot;based on novel|photographer|baseball|dollar|remake&quot;</value>
+            <value>&quot;based on novel|poverty|rural|burial|faulkner&quot;</value>
+            <value>&quot;based on novel|prohibition|brother|bootlegging|1930s&quot;</value>
+            <value>&quot;based on novel|psychoanalysis|sigmund freud|biography|spanking&quot;</value>
+            <value>&quot;based on novel|psychopath|horror|suspense|serial killer&quot;</value>
+            <value>&quot;based on novel|race politics|apartheid&quot;</value>
+            <value>&quot;based on novel|resistance|maze|post-apocalyptic|dystopia&quot;</value>
+            <value>&quot;based on novel|revolution|dystopia|sequel|dystopic future&quot;</value>
+            <value>&quot;based on novel|role reversal|school|teen movie|body-swap&quot;</value>
+            <value>&quot;based on novel|secret|professor|nudity|supernatural&quot;</value>
+            <value>&quot;based on novel|secret|puberty|book|one-sided love&quot;</value>
+            <value>&quot;based on novel|servant|private school|female friendship|boarding school&quot;</value>
+            <value>&quot;based on novel|sister sister relationship|cult classic|old mansion|film actresses&quot;</value>
+            <value>&quot;based on novel|sister sister relationship|flirt|loss of sister|new love&quot;</value>
+            <value>&quot;based on novel|small town|widower|single father|nicholas sparks&quot;</value>
+            <value>&quot;based on novel|sniper|investigation|police|character name in title&quot;</value>
+            <value>&quot;based on novel|sniper|widow|retirement&quot;</value>
+            <value>&quot;based on novel|sport|bodybuilding|gym&quot;</value>
+            <value>&quot;based on novel|stop motion animation|father daughter relationship|unlikely friendship|duringcreditsstinger&quot;</value>
+            <value>&quot;based on novel|suicidal|death of lover|teacher student relationship|lgbt&quot;</value>
+            <value>&quot;based on novel|suicide attempt|dream|victim of murder|kidnapping and murder&quot;</value>
+            <value>&quot;based on novel|suicide attempt|puberty|biography|borderline personality disorder&quot;</value>
+            <value>&quot;based on novel|tarzan|motion capture&quot;</value>
+            <value>&quot;based on novel|theatre group|north carolina|theatre milieu|high school&quot;</value>
+            <value>&quot;based on novel|tradition|holocaust|nazis|rabbi&quot;</value>
+            <value>&quot;based on novel|underwear|wall street|psychopath|ronald reagan&quot;</value>
+            <value>&quot;based on novel|voodoo|kiss|princess|animation&quot;</value>
+            <value>&quot;based on novel|waitress|passion|love|advertising executive&quot;</value>
+            <value>&quot;based on novel|water|remake|teacher|divorce&quot;</value>
+            <value>&quot;based on novel|werewolf|duringcreditsstinger&quot;</value>
+            <value>&quot;based on novel|wife husband relationship|photo|kennel|playing chess&quot;</value>
+            <value>&quot;based on novel|witness|village|court|love&quot;</value>
+            <value>&quot;based on novel|woman director&quot;</value>
+            <value>&quot;based on novel|world war i|war|love affair|united kingdom&quot;</value>
+            <value>&quot;based on novel|world war ii|fort|allied|army&quot;</value>
+            <value>&quot;based on novel|world war ii|love|french resistance|nazi occupation&quot;</value>
+            <value>&quot;based on novel|world war ii|nazis|castle|secret mission&quot;</value>
+            <value>&quot;based on novel|wyoming|saloon|buffalo|native american&quot;</value>
+            <value>&quot;based on novel|yuppie|kidnapper|porsche|kidnapping&quot;</value>
+            <value>&quot;berlin|assassin|based on novel|amnesia|sniper&quot;</value>
+            <value>&quot;black people|based on novel|brother sister relationship|becoming an adult|isolation&quot;</value>
+            <value>&quot;black people|based on novel|holocaust|ghetto|diary&quot;</value>
+            <value>&quot;bomb|based on novel|airport|desperation|snow storm&quot;</value>
+            <value>&quot;bomb|sex|based on novel|experiment|nudity&quot;</value>
+            <value>&quot;bounty hunter|based on novel|framed|money in title|bail jumper&quot;</value>
+            <value>&quot;bowling|based on novel|servant|country life|jane austen&quot;</value>
+            <value>&quot;brother brother relationship|based on novel|cat|mouse|adoption&quot;</value>
+            <value>&quot;brother brother relationship|based on novel|sailing|ghost|young adult&quot;</value>
+            <value>&quot;brother brother relationship|elves|based on novel|santa claus&quot;</value>
+            <value>&quot;bureaucracy|england|dolphin|android|based on novel&quot;</value>
+            <value>&quot;california|detective|based on novel|dream|chase&quot;</value>
+            <value>&quot;california|detective|based on novel|dream|undercover&quot;</value>
+            <value>&quot;california|sex|runaway|based on novel|friends&quot;</value>
+            <value>&quot;chicago|sex|based on novel|nudity|diary&quot;</value>
+            <value>&quot;child abuse|detective|based on novel|bar|island&quot;</value>
+            <value>&quot;chocolate|factory worker|based on novel|candy|tv addicted person&quot;</value>
+            <value>&quot;cia|based on novel|cheerleader|murder|mother daughter relationship&quot;</value>
+            <value>&quot;circus|witch|based on novel|lightning|dream&quot;</value>
+            <value>&quot;coma|based on novel|workaholic|flirt|architect&quot;</value>
+            <value>&quot;competition|based on novel|shark attack|surfing|biography&quot;</value>
+            <value>&quot;confession|based on novel|birthday|nudity|cruise&quot;</value>
+            <value>&quot;corruption|assassination|based on novel|senator|surprise ending&quot;</value>
+            <value>&quot;corruption|journalist|based on novel|blackmail|manipulation&quot;</value>
+            <value>&quot;corruption|robbery|detective|based on novel|boston&quot;</value>
+            <value>&quot;cyborg|based on novel|space marine|mutiny|loss of father&quot;</value>
+            <value>&quot;dancing|based on novel|greece|dance|crete&quot;</value>
+            <value>&quot;dancing|based on novel|revenge|native american|tied feet&quot;</value>
+            <value>&quot;dancing|philadelphia|running|based on novel|depression&quot;</value>
+            <value>&quot;dancing|sex|adultery|fortune teller|based on novel&quot;</value>
+            <value>&quot;dc comics|superhero|based on comic book|police corruption|based on graphic novel&quot;</value>
+            <value>&quot;diplomat|extramarital affair|novelist&quot;</value>
+            <value>&quot;diving|ocean|female nudity|based on novel|treasure&quot;</value>
+            <value>&quot;dream|imaginary friend|therapy|novelist|woman director&quot;</value>
+            <value>&quot;dysfunctional family|independent film|trophy wife|tell all novel|failed children&quot;</value>
+            <value>&quot;dystopia|based on comic book|based on graphic novel|black and white and color|black and white scene&quot;</value>
+            <value>&quot;elves|orcs|middle-earth (tolkien)|based on novel|suspicion&quot;</value>
+            <value>&quot;elves|orcs|middle-earth (tolkien)|hobbits|based on novel&quot;</value>
+            <value>&quot;england|based on novel|cricket|birthday party&quot;</value>
+            <value>&quot;england|based on novel|island|murder|agatha christie&quot;</value>
+            <value>&quot;england|based on novel|kingdom|royalty|12th century&quot;</value>
+            <value>&quot;england|based on novel|nightmare|uniform|murder&quot;</value>
+            <value>&quot;england|train station|based on novel|bear|anthropomorphic animal&quot;</value>
+            <value>&quot;falsely accused person|based on novel|marriage crisis|disappearance|cheating husband&quot;</value>
+            <value>&quot;father-son relationship|based on novel|reincarnation|talking dog|car accident&quot;</value>
+            <value>&quot;father-son relationship|capitalism|based on novel|smoking|lie&quot;</value>
+            <value>&quot;father-son relationship|rape|based on novel|mountains|winter&quot;</value>
+            <value>&quot;female nudity|africa|rape|based on novel|vagabund&quot;</value>
+            <value>&quot;female nudity|based on novel|nudity|tarot cards|supernatural powers&quot;</value>
+            <value>&quot;female nudity|based on novel|secret|hamster|nudity&quot;</value>
+            <value>&quot;female nudity|based on novel|stripper|flop|black comedy&quot;</value>
+            <value>&quot;female nudity|rape|fire|dancer|based on novel&quot;</value>
+            <value>&quot;flying|scotland|based on novel|baby|ecstasy&quot;</value>
+            <value>&quot;friendship|based on a children&apos;s book|anger issues|inspired by novel&quot;</value>
+            <value>&quot;future|based on graphic novel|dystopic future|super powers&quot;</value>
+            <value>&quot;future|joker|robin|based on graphic novel|dystopic future&quot;</value>
+            <value>&quot;gambling|based on novel|beer|australia|independent film&quot;</value>
+            <value>&quot;gambling|miami|based on novel|job|murder&quot;</value>
+            <value>&quot;gambling|sex|casino|based on novel|vandalism&quot;</value>
+            <value>&quot;gay|aids|based on novel|gay kiss|gay scene&quot;</value>
+            <value>&quot;gay|based on novel|britain|united kingdom&quot;</value>
+            <value>&quot;gay|male nudity|prison|based on novel|homophobia&quot;</value>
+            <value>&quot;gay|self-fulfilling prophecy|based on novel|journalism|identity&quot;</value>
+            <value>&quot;germany|based on novel|nazis|double agent&quot;</value>
+            <value>&quot;germany|corruption|sex|based on novel|investigation&quot;</value>
+            <value>&quot;helicopter|based on novel|airport|cataclysm|guitar&quot;</value>
+            <value>&quot;helicopter|based on novel|honeymoon|airplane|birding&quot;</value>
+            <value>&quot;helicopter|journalist|based on novel|terrorist|skyscraper&quot;</value>
+            <value>&quot;holiday|based on novel|cat|fairy tale|donkey&quot;</value>
+            <value>&quot;holiday|based on novel|monster|obsession|santa claus&quot;</value>
+            <value>&quot;hotel|based on novel|bath|joke|health&quot;</value>
+            <value>&quot;hotel|robbery|based on novel|judge|hawaii&quot;</value>
+            <value>&quot;italy|based on novel|female friendship|vacation|chance encounter&quot;</value>
+            <value>&quot;journalist|based on novel|hacker|punk|investigation&quot;</value>
+            <value>&quot;journalist|based on novel|puppy|dog|duringcreditsstinger&quot;</value>
+            <value>&quot;journalist|based on novel|undercover|dating|co-worker&quot;</value>
+            <value>&quot;killing|based on novel|incest|morphing&quot;</value>
+            <value>&quot;london|based on novel|bachelor|flat|gadget&quot;</value>
+            <value>&quot;london|based on novel|key|adventure|supernatural&quot;</value>
+            <value>&quot;london|based on novel|medium|ghost hunting|ghost hunter&quot;</value>
+            <value>&quot;london|based on novel|plants|giant plant|alien life-form&quot;</value>
+            <value>&quot;london|bomb|brother brother relationship|helicopter|based on novel&quot;</value>
+            <value>&quot;london|father-son relationship|chocolate|factory worker|based on novel&quot;</value>
+            <value>&quot;london|female nudity|women|countryside|based on novel&quot;</value>
+            <value>&quot;love triangle|based on novel|homesickness|vororte|ship&quot;</value>
+            <value>&quot;love triangle|based on novel|jealousy|radiation|tractor&quot;</value>
+            <value>&quot;love|independent film|relationship|family|novelist&quot;</value>
+            <value>&quot;male nudity|adultery|based on novel|infidelity|tv show&quot;</value>
+            <value>&quot;male nudity|based on novel|nudity|murder|neighbor&quot;</value>
+            <value>&quot;male nudity|based on novel|paranoia|nudity|halloween&quot;</value>
+            <value>&quot;male nudity|female nudity|based on novel|cemetery|funeral&quot;</value>
+            <value>&quot;male nudity|female nudity|based on novel|subconsciousness|nudity&quot;</value>
+            <value>&quot;mississippi|based on novel|exploitation|racial segregation|racism&quot;</value>
+            <value>&quot;moon|based on novel|space travel|moon landing|alien&quot;</value>
+            <value>&quot;mother|child abuse|single parent|based on novel|smoking&quot;</value>
+            <value>&quot;new york|adultery|based on novel|lolita|love&quot;</value>
+            <value>&quot;new york|alcohol|based on novel|secret|cheating&quot;</value>
+            <value>&quot;new york|based on novel|historical figure|theater|1930s&quot;</value>
+            <value>&quot;new york|based on novel|shop|department store|shopping mall&quot;</value>
+            <value>&quot;new york|hotel|based on novel|birthday|bath&quot;</value>
+            <value>&quot;new york|male nudity|female nudity|sex|based on novel&quot;</value>
+            <value>&quot;new york|prostitute|sex|based on novel|dream&quot;</value>
+            <value>&quot;nurse|sex|based on novel|bondage|obsession&quot;</value>
+            <value>&quot;paris|barcelona spain|assassin|based on novel|secret identity&quot;</value>
+            <value>&quot;paris|corruption|madrid|assassin|based on novel&quot;</value>
+            <value>&quot;paris|painter|detective|based on novel|screenwriter&quot;</value>
+            <value>&quot;plagiarized book|stolen novel|plagiarized novel|aspiring writer&quot;</value>
+            <value>&quot;poker|gambling|robbery|based on novel|hitman&quot;</value>
+            <value>&quot;prison|based on novel|brother sister relationship|satanism|witness&quot;</value>
+            <value>&quot;prison|chicago|rape|based on novel|hotel room&quot;</value>
+            <value>&quot;rape|based on novel|peasant|historian|marriage&quot;</value>
+            <value>&quot;rape|drowning|based on novel|lake|grave&quot;</value>
+            <value>&quot;regret|based on novel|baseball|miracle|farm&quot;</value>
+            <value>&quot;san francisco|hotel|detective|based on novel|airport&quot;</value>
+            <value>&quot;saving the world|witch|based on novel|brother sister relationship|self sacrifice&quot;</value>
+            <value>&quot;secret|book|psychiatrist|novelist|schizophrenic&quot;</value>
+            <value>&quot;sex|adultery|based on novel|cat|infidelity&quot;</value>
+            <value>&quot;sex|adultery|based on novel|fishing|isolation&quot;</value>
+            <value>&quot;sex|adultery|confession|based on novel|obsession&quot;</value>
+            <value>&quot;sex|american football|based on novel|texas|career&quot;</value>
+            <value>&quot;sex|based on novel|mystery|disappearance|missing person&quot;</value>
+            <value>&quot;sex|based on novel|nudity|friendship|high school&quot;</value>
+            <value>&quot;sex|based on novel|nudity|nazis|government&quot;</value>
+            <value>&quot;sex|based on novel|nudity|pregnancy and birth|paternity&quot;</value>
+            <value>&quot;sex|based on novel|roommate|identity|secret&quot;</value>
+            <value>&quot;sex|detention|based on graphic novel|preparatory school&quot;</value>
+            <value>&quot;sheriff|based on novel|small town|strangeness|manipulation&quot;</value>
+            <value>&quot;shyness|based on novel|unrequited love|neighbor|family relationships&quot;</value>
+            <value>&quot;single parent|based on novel|expedition|professor|college&quot;</value>
+            <value>&quot;soul|based on novel|sadness|forgiveness|dystopia&quot;</value>
+            <value>&quot;spain|rape|based on novel|full moon|murder&quot;</value>
+            <value>&quot;spy|based on novel|secret agent|sequel|james bond&quot;</value>
+            <value>&quot;submarine|drowning|based on novel|rescue|disaster&quot;</value>
+            <value>&quot;suicide|artificial intelligence|man vs machine|chicago|based on novel&quot;</value>
+            <value>&quot;suicide|based on novel|hotel room|obsession|sadomasochism&quot;</value>
+            <value>&quot;suicide|detective|based on novel|bondage|general&quot;</value>
+            <value>&quot;suicide|england|alcohol|sex|based on novel&quot;</value>
+            <value>&quot;suicide|england|based on novel|parents kids relationship|youngster&quot;</value>
+            <value>&quot;suicide|gambling|manager|alcohol|based on novel&quot;</value>
+            <value>&quot;suicide|male nudity|female nudity|hunter|based on novel&quot;</value>
+            <value>&quot;suicide|prostitute|helicopter|based on novel|journalism&quot;</value>
+            <value>&quot;suicide|sex|based on novel|explosive|architect&quot;</value>
+            <value>&quot;suicide|sex|hotel|based on novel|newspaper&quot;</value>
+            <value>&quot;superhero|based on comic book|noir|based on graphic novel|pulp&quot;</value>
+            <value>&quot;tattoo|prison|based on novel|hostage|fight&quot;</value>
+            <value>&quot;terror|based on novel|power|telekinesis|high school&quot;</value>
+            <value>&quot;transylvania|female nudity|based on novel|monster|wolf&quot;</value>
+            <value>&quot;underdog|based on novel|baseball|teamwork|partner&quot;</value>
+            <value>&quot;upper class|brother brother relationship|scotland|poetry|based on novel&quot;</value>
+            <value>&quot;video game|based on novel|space war|animation|halo&quot;</value>
+            <value>&quot;vietnam veteran|hippie|mentally disabled|running|based on novel&quot;</value>
+            <value>&quot;witch|based on novel|halloween|death|evil&quot;</value>
+            <value>&quot;witch|based on novel|new love|prince|beauty&quot;</value>
+            <value>&quot;witch|based on novel|scarecrow|the muppets|wizard of oz&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[keywords]' role='dimension' type='nominal' />
+      <column caption='Original Title' datatype='string' name='[original_title]' role='dimension' type='nominal' />
+      <column caption='Popularity' datatype='real' name='[popularity]' role='measure' type='quantitative' />
+      <column caption='Production Companies' datatype='string' name='[production_companies]' role='dimension' type='nominal' />
+      <column caption='Release Date' datatype='date' name='[release_date]' role='dimension' type='ordinal' />
+      <column caption='Release Month' datatype='string' name='[release_month]' role='dimension' type='nominal' />
+      <column caption='Release Month Num' datatype='integer' name='[release_month_num]' role='dimension' type='ordinal' />
+      <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      <column caption='Revenue' datatype='integer' name='[revenue]' role='measure' type='quantitative' />
+      <column caption='Revenue Adj' datatype='real' name='[revenue_adj]' role='measure' type='quantitative' />
+      <column caption='Runtime' datatype='real' name='[runtime]' role='measure' type='quantitative' />
+      <column caption='Vote Average' datatype='integer' name='[vote_average]' role='measure' type='quantitative' />
+      <column caption='Vote Count' datatype='real' name='[vote_count]' role='measure' type='quantitative' />
+      <column-instance column='[Calculation_673569642447269888]' derivation='Avg' name='[avg:Calculation_673569642447269888:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_673569642447650817]' derivation='Avg' name='[avg:Calculation_673569642447650817:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[budget]' derivation='Avg' name='[avg:budget:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[budget_adj]' derivation='Avg' name='[avg:budget_adj:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[popularity]' derivation='Avg' name='[avg:popularity:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[revenue]' derivation='Avg' name='[avg:revenue:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[runtime]' derivation='Avg' name='[avg:runtime:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[vote_count]' derivation='Avg' name='[avg:vote_count:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_673569642447650817]' derivation='Count' name='[cnt:Calculation_673569642447650817:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_750130836133322752]' derivation='None' name='[none:Calculation_750130836133322752:nk]' pivot='key' type='nominal' />
+      <column-instance column='[genres]' derivation='None' name='[none:genres:nk]' pivot='key' type='nominal' />
+      <column-instance column='[original_title]' derivation='None' name='[none:original_title:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_673569642447269888]' derivation='Sum' name='[sum:Calculation_673569642447269888:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_673569642447650817]' derivation='Sum' name='[sum:Calculation_673569642447650817:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[budget_adj]' derivation='Sum' name='[sum:budget_adj:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[revenue]' derivation='Sum' name='[sum:revenue:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[revenue_adj]' derivation='Sum' name='[sum:revenue_adj:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[vote_count]' derivation='Sum' name='[sum:vote_count:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='E:/Business Nanodegree/Project-5/project3-1/Sheet1 (final3).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='07/24/2018 02:17:48 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='10824' timestamp-start='2018-07-24 14:17:48.849' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Field_1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Field_1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Field_1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10824</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>imdb_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[imdb_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>imdb_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10824</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>popularity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[popularity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>popularity</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10824</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>budget</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[budget]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>budget</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>156</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>497</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>original_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[original_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>original_title</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10824</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>cast</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[cast]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>cast</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10824</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>director</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[director]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>director</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3167</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>keywords</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[keywords]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>keywords</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2832</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>runtime</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[runtime]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>runtime</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>120</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>genres</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[genres]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>genres</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>508</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>production_companies</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[production_companies]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>production_companies</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1996</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[release_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_date</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Sheet1</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>4897</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vote_count</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[vote_count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vote_count</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>337</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>vote_average</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[vote_average]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>vote_average</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[release_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_year</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>budget_adj</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[budget_adj]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>budget_adj</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>479</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue_adj</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[revenue_adj]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue_adj</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Sheet1</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>497</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[release_month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_month</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Sheet1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>release_month_num</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[release_month_num]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>release_month_num</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Sheet1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.53252' measure-ordering='alphabetic' measure-percentage='0.46748' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:genres:nk]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;Drama&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Foreign&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Western&quot;</bucket>
+            </map>
+            <map to='#57606c'>
+              <bucket>&quot;Action&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mystery&quot;</bucket>
+            </map>
+            <map to='#5fa2ce'>
+              <bucket>&quot;Romance&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Animation&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Music&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Family&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;TV Movie&quot;</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>&quot;Thriller&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Documentary&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Science Fiction&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Fantasy&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;War&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Adventure&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Horror&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Crime&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;History&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;Comedy&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:original_title:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jurassic World&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Despicable Me 2&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;E.T. the Extra-Terrestrial&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;The Mummy Returns&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jurassic Park&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Furious 7&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Fast &amp; Furious 6&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Minions&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;The Mummy&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_750130836133322752:nk]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;Paramount&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;Universal&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' palette='color_blind_10_0' type='palette'>
+            <map to='#1170aa'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[avg:budget:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[avg:budget_adj:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[avg:popularity:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[sum:budget_adj:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[cnt:Calculation_673569642447650817:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[sum:Calculation_673569642447650817:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[avg:Calculation_673569642447269888:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[avg:vote_count:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[sum:Calculation_673569642447269888:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[sum:vote_count:qk]&quot;</bucket>
+            </map>
+            <map to='#a3acb9'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[avg:Calculation_673569642447650817:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[sum:revenue:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[avg:runtime:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[sum:revenue_adj:qk]&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[avg:revenue:qk]&quot;</bucket>
+            </map>
+            <map to='#fc7d0b'>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[sum:Number of Records:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[keywords (group)]' type='shape'>
+            <map to=':filled/square'>
+              <bucket>&quot;Based on novel&quot;</bucket>
+            </map>
+            <map to=':filled/times'>
+              <bucket>&quot;Not based on novel&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;Not novel based&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[keywords (group)]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Based on novel&quot;</bucket>
+            </map>
+            <map to='#a2a2a2'>
+              <bucket>&quot;Not based on novel&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.18etttg1po300a1eecj8p1d9gwix'>
+      <datasources>
+        <datasource caption='Sheet1 (final)' name='federated.18etttg1po300a1eecj8p1d9gwix' />
+      </datasources>
+      <datasource-dependencies datasource='federated.18etttg1po300a1eecj8p1d9gwix'>
+        <column-instance column='[release_month]' derivation='None' name='[none:release_month:nk]' pivot='key' type='nominal' />
+        <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
+        <column caption='Release Month' datatype='string' name='[release_month]' role='dimension' type='nominal' />
+        <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_month:nk]'>
+        <groupfilter function='level-members' level='[none:release_month:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_month:nk]' />
+      </filter>
+      <filter class='quantitative' column='[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_year:qk]' included-values='in-range'>
+        <min>1960</min>
+        <max>2015</max>
+        <target field='[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_year:qk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='12'>Comparing Profit Novel vs Non-novel Movies</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (final)' name='federated.18etttg1po300a1eecj8p1d9gwix' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18etttg1po300a1eecj8p1d9gwix'>
+            <column caption='Profit' datatype='integer' name='[Calculation_673569642447650817]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[revenue]-[budget]' />
+            </column>
+            <column-instance column='[Calculation_673569642447650817]' derivation='Avg' name='[avg:Calculation_673569642447650817:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[budget]' derivation='Avg' name='[avg:budget:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[revenue]' derivation='Avg' name='[avg:revenue:qk]' pivot='key' type='quantitative' />
+            <column caption='Budget' datatype='integer' name='[budget]' role='measure' type='quantitative' />
+            <column caption='Movies_group' datatype='string' name='[keywords (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[keywords]' default='&quot;Not based on novel&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;Based on novel&quot;'>
+                  <value>&quot;1970s|teenage girl|older man younger woman relationship|based on graphic novel|teenage sexuality&quot;</value>
+                  <value>&quot;adolescence|based on novel|loss of child|fight|chase&quot;</value>
+                  <value>&quot;adultery|based on novel|love|lieutenant|tragedy&quot;</value>
+                  <value>&quot;adultery|journalist|based on novel|newspaper|unfaithfulness&quot;</value>
+                  <value>&quot;adultery|robbery|based on novel|professor|college&quot;</value>
+                  <value>&quot;africa|based on novel|child soldier&quot;</value>
+                  <value>&quot;alcohol|based on novel|burglar|trainer|police&quot;</value>
+                  <value>&quot;alcohol|sex|detective|confession|based on novel&quot;</value>
+                  <value>&quot;ambush|helicopter|journalist|based on novel|airport&quot;</value>
+                  <value>&quot;amsterdam|based on novel|support group|cancer|teenager&quot;</value>
+                  <value>&quot;angel|based on novel|supernatural|fallen angel|orphan&quot;</value>
+                  <value>&quot;angel|sex|robbery|based on novel|karaoke&quot;</value>
+                  <value>&quot;based on graphic novel|ancient greece|duringcreditsstinger|sea battle|hand to hand combat&quot;</value>
+                  <value>&quot;based on graphic novel|homework|shot in the chin|soft boiled egg|learning to drive&quot;</value>
+                  <value>&quot;based on graphic novel|multiple personality|psychiatric&quot;</value>
+                  <value>&quot;based on novel&quot;</value>
+                  <value>&quot;based on novel|1970s|private investigator|smoking marijuana|los angeles&quot;</value>
+                  <value>&quot;based on novel|1970s|thanksgiving|dysfunctional family|independent film&quot;</value>
+                  <value>&quot;based on novel|adoption|pregnant|miscarriage|expectant father&quot;</value>
+                  <value>&quot;based on novel|army|love|u.s. soldier|nicholas sparks&quot;</value>
+                  <value>&quot;based on novel|art student|cowboys|injury|bull riding&quot;</value>
+                  <value>&quot;based on novel|attack|massacre|private&quot;</value>
+                  <value>&quot;based on novel|australia|dressmaker|hometown|woman director&quot;</value>
+                  <value>&quot;based on novel|baltimore|kidnapping|missing child|baltimore maryland&quot;</value>
+                  <value>&quot;based on novel|billionaire|bdsm|woman director|erotic movie&quot;</value>
+                  <value>&quot;based on novel|biography|based on true story&quot;</value>
+                  <value>&quot;based on novel|biography|historical figure|marilyn monroe&quot;</value>
+                  <value>&quot;based on novel|biography|police|woods|ufo&quot;</value>
+                  <value>&quot;based on novel|brother sister relationship|canada|village|love&quot;</value>
+                  <value>&quot;based on novel|burning of witches|puritan|period piece|pregnancy&quot;</value>
+                  <value>&quot;based on novel|callboy|romantic comedy|wedding|escort&quot;</value>
+                  <value>&quot;based on novel|canada|island|chicken|horse&quot;</value>
+                  <value>&quot;based on novel|carpet|isolation|imprisonment|grandparents&quot;</value>
+                  <value>&quot;based on novel|celebrity|based on true story|gay relationship|gay interest&quot;</value>
+                  <value>&quot;based on novel|cemetery|isolation|stage|nudity&quot;</value>
+                  <value>&quot;based on novel|character name in title|middle school&quot;</value>
+                  <value>&quot;based on novel|character name in title|police detective&quot;</value>
+                  <value>&quot;based on novel|charles dickens&quot;</value>
+                  <value>&quot;based on novel|comedian|job|love|male female relationship&quot;</value>
+                  <value>&quot;based on novel|coming of age|duringcreditsstinger&quot;</value>
+                  <value>&quot;based on novel|coming of age|young boy|middle school|popularity&quot;</value>
+                  <value>&quot;based on novel|commercial|brother sister relationship|secret|kiss&quot;</value>
+                  <value>&quot;based on novel|desperation|robber|hold-up robbery|remake&quot;</value>
+                  <value>&quot;based on novel|dinosaur|sir arthur conan doyle|lost continent&quot;</value>
+                  <value>&quot;based on novel|drug dealer|ex-cop|rural setting|undercover cop&quot;</value>
+                  <value>&quot;based on novel|dystopia|love|teenager|failed tv pilot&quot;</value>
+                  <value>&quot;based on novel|dystopia|youth|dystopic future|caste system&quot;</value>
+                  <value>&quot;based on novel|faith|based on true events&quot;</value>
+                  <value>&quot;based on novel|fictional place|lion|human being|wretch&quot;</value>
+                  <value>&quot;based on novel|fictional place|queen|alice in wonderland|fantastic&quot;</value>
+                  <value>&quot;based on novel|fictional place|wolf|mythology|magic&quot;</value>
+                  <value>&quot;based on novel|foster sister|moor|yorkshire england|foster family&quot;</value>
+                  <value>&quot;based on novel|fox|foxhunting|friendship|dog&quot;</value>
+                  <value>&quot;based on novel|friendship|coming of age|railroad track|story within the story&quot;</value>
+                  <value>&quot;based on novel|funeral|dysfunctional family|death of father|man child&quot;</value>
+                  <value>&quot;based on novel|garden|loss of parents|magic potion|aunt&quot;</value>
+                  <value>&quot;based on novel|gold|treasure|coffin|human being-animal relationship&quot;</value>
+                  <value>&quot;based on novel|harvard university|college|drama|cancer&quot;</value>
+                  <value>&quot;based on novel|haunted house|gothic horror|made for television&quot;</value>
+                  <value>&quot;based on novel|haunted house|supernatural|sequel|haunting&quot;</value>
+                  <value>&quot;based on novel|high school|teenager|teen comedy|multiple storylines&quot;</value>
+                  <value>&quot;based on novel|high society|imperial russia|saint petersburg|tragic death&quot;</value>
+                  <value>&quot;based on novel|independent film&quot;</value>
+                  <value>&quot;based on novel|indian|servant|secret|garden&quot;</value>
+                  <value>&quot;based on novel|infidelity|obsession|hope|3d&quot;</value>
+                  <value>&quot;based on novel|interracial relationship|single mother|divorce|chick flick&quot;</value>
+                  <value>&quot;based on novel|intolerance|chosen one|child prodigy|futuristic&quot;</value>
+                  <value>&quot;based on novel|island|hurricane|investigation|psychiatric hospital&quot;</value>
+                  <value>&quot;based on novel|japanese|world war ii|battle assignment|invasion&quot;</value>
+                  <value>&quot;based on novel|job interview|bad luck|wish|one day&quot;</value>
+                  <value>&quot;based on novel|key|scavenger hunt|death of father|young boy&quot;</value>
+                  <value>&quot;based on novel|loser|magazine|womanizer|mission&quot;</value>
+                  <value>&quot;based on novel|love|beautiful woman|curse|teenager&quot;</value>
+                  <value>&quot;based on novel|magic|fantasy|family|3d&quot;</value>
+                  <value>&quot;based on novel|magic|good vs evil|king|narnia&quot;</value>
+                  <value>&quot;based on novel|make a match|jane austen|matchmaking&quot;</value>
+                  <value>&quot;based on novel|male female relationship|teenage pregnancy|best friends in love|missed opportunity&quot;</value>
+                  <value>&quot;based on novel|mars|medaillon|cave|future&quot;</value>
+                  <value>&quot;based on novel|mars|nasa|isolation|botanist&quot;</value>
+                  <value>&quot;based on novel|mass murder|dystopia|two word title|genocide&quot;</value>
+                  <value>&quot;based on novel|maze|post-apocalyptic|dystopia|escape&quot;</value>
+                  <value>&quot;based on novel|mentor|secret|factory|television&quot;</value>
+                  <value>&quot;based on novel|middle school|female lead|woman director&quot;</value>
+                  <value>&quot;based on novel|mother daughter relationship|chinese|family|chinese american&quot;</value>
+                  <value>&quot;based on novel|murder|mafia|private investigator|new york city&quot;</value>
+                  <value>&quot;based on novel|musical|color in title|based on stage musical|woman director&quot;</value>
+                  <value>&quot;based on novel|musical|drug|cult classic&quot;</value>
+                  <value>&quot;based on novel|mythical creature|dragon|fantasy world|teenage hero&quot;</value>
+                  <value>&quot;based on novel|nasa|new mexico|extraterrestrial technology|prime number&quot;</value>
+                  <value>&quot;based on novel|new love|love of one&apos;s life|retiree|aging&quot;</value>
+                  <value>&quot;based on novel|nightmare|stranger&quot;</value>
+                  <value>&quot;based on novel|obsession|hero|harpoon|revenge&quot;</value>
+                  <value>&quot;based on novel|optimism|switzerland|baseball|famous score&quot;</value>
+                  <value>&quot;based on novel|painting|debt|art dealer|stolen painting&quot;</value>
+                  <value>&quot;based on novel|paralysis|revenge|rage|monkey&quot;</value>
+                  <value>&quot;based on novel|photographer|baseball|dollar|remake&quot;</value>
+                  <value>&quot;based on novel|poverty|rural|burial|faulkner&quot;</value>
+                  <value>&quot;based on novel|prohibition|brother|bootlegging|1930s&quot;</value>
+                  <value>&quot;based on novel|psychoanalysis|sigmund freud|biography|spanking&quot;</value>
+                  <value>&quot;based on novel|psychopath|horror|suspense|serial killer&quot;</value>
+                  <value>&quot;based on novel|race politics|apartheid&quot;</value>
+                  <value>&quot;based on novel|resistance|maze|post-apocalyptic|dystopia&quot;</value>
+                  <value>&quot;based on novel|revolution|dystopia|sequel|dystopic future&quot;</value>
+                  <value>&quot;based on novel|role reversal|school|teen movie|body-swap&quot;</value>
+                  <value>&quot;based on novel|secret|professor|nudity|supernatural&quot;</value>
+                  <value>&quot;based on novel|secret|puberty|book|one-sided love&quot;</value>
+                  <value>&quot;based on novel|servant|private school|female friendship|boarding school&quot;</value>
+                  <value>&quot;based on novel|sister sister relationship|cult classic|old mansion|film actresses&quot;</value>
+                  <value>&quot;based on novel|sister sister relationship|flirt|loss of sister|new love&quot;</value>
+                  <value>&quot;based on novel|small town|widower|single father|nicholas sparks&quot;</value>
+                  <value>&quot;based on novel|sniper|investigation|police|character name in title&quot;</value>
+                  <value>&quot;based on novel|sniper|widow|retirement&quot;</value>
+                  <value>&quot;based on novel|sport|bodybuilding|gym&quot;</value>
+                  <value>&quot;based on novel|stop motion animation|father daughter relationship|unlikely friendship|duringcreditsstinger&quot;</value>
+                  <value>&quot;based on novel|suicidal|death of lover|teacher student relationship|lgbt&quot;</value>
+                  <value>&quot;based on novel|suicide attempt|dream|victim of murder|kidnapping and murder&quot;</value>
+                  <value>&quot;based on novel|suicide attempt|puberty|biography|borderline personality disorder&quot;</value>
+                  <value>&quot;based on novel|tarzan|motion capture&quot;</value>
+                  <value>&quot;based on novel|theatre group|north carolina|theatre milieu|high school&quot;</value>
+                  <value>&quot;based on novel|tradition|holocaust|nazis|rabbi&quot;</value>
+                  <value>&quot;based on novel|underwear|wall street|psychopath|ronald reagan&quot;</value>
+                  <value>&quot;based on novel|voodoo|kiss|princess|animation&quot;</value>
+                  <value>&quot;based on novel|waitress|passion|love|advertising executive&quot;</value>
+                  <value>&quot;based on novel|water|remake|teacher|divorce&quot;</value>
+                  <value>&quot;based on novel|werewolf|duringcreditsstinger&quot;</value>
+                  <value>&quot;based on novel|wife husband relationship|photo|kennel|playing chess&quot;</value>
+                  <value>&quot;based on novel|witness|village|court|love&quot;</value>
+                  <value>&quot;based on novel|woman director&quot;</value>
+                  <value>&quot;based on novel|world war i|war|love affair|united kingdom&quot;</value>
+                  <value>&quot;based on novel|world war ii|fort|allied|army&quot;</value>
+                  <value>&quot;based on novel|world war ii|love|french resistance|nazi occupation&quot;</value>
+                  <value>&quot;based on novel|world war ii|nazis|castle|secret mission&quot;</value>
+                  <value>&quot;based on novel|wyoming|saloon|buffalo|native american&quot;</value>
+                  <value>&quot;based on novel|yuppie|kidnapper|porsche|kidnapping&quot;</value>
+                  <value>&quot;berlin|assassin|based on novel|amnesia|sniper&quot;</value>
+                  <value>&quot;black people|based on novel|brother sister relationship|becoming an adult|isolation&quot;</value>
+                  <value>&quot;black people|based on novel|holocaust|ghetto|diary&quot;</value>
+                  <value>&quot;bomb|based on novel|airport|desperation|snow storm&quot;</value>
+                  <value>&quot;bomb|sex|based on novel|experiment|nudity&quot;</value>
+                  <value>&quot;bounty hunter|based on novel|framed|money in title|bail jumper&quot;</value>
+                  <value>&quot;bowling|based on novel|servant|country life|jane austen&quot;</value>
+                  <value>&quot;brother brother relationship|based on novel|cat|mouse|adoption&quot;</value>
+                  <value>&quot;brother brother relationship|based on novel|sailing|ghost|young adult&quot;</value>
+                  <value>&quot;brother brother relationship|elves|based on novel|santa claus&quot;</value>
+                  <value>&quot;bureaucracy|england|dolphin|android|based on novel&quot;</value>
+                  <value>&quot;california|detective|based on novel|dream|chase&quot;</value>
+                  <value>&quot;california|detective|based on novel|dream|undercover&quot;</value>
+                  <value>&quot;california|sex|runaway|based on novel|friends&quot;</value>
+                  <value>&quot;chicago|sex|based on novel|nudity|diary&quot;</value>
+                  <value>&quot;child abuse|detective|based on novel|bar|island&quot;</value>
+                  <value>&quot;chocolate|factory worker|based on novel|candy|tv addicted person&quot;</value>
+                  <value>&quot;cia|based on novel|cheerleader|murder|mother daughter relationship&quot;</value>
+                  <value>&quot;circus|witch|based on novel|lightning|dream&quot;</value>
+                  <value>&quot;coma|based on novel|workaholic|flirt|architect&quot;</value>
+                  <value>&quot;competition|based on novel|shark attack|surfing|biography&quot;</value>
+                  <value>&quot;confession|based on novel|birthday|nudity|cruise&quot;</value>
+                  <value>&quot;corruption|assassination|based on novel|senator|surprise ending&quot;</value>
+                  <value>&quot;corruption|journalist|based on novel|blackmail|manipulation&quot;</value>
+                  <value>&quot;corruption|robbery|detective|based on novel|boston&quot;</value>
+                  <value>&quot;cyborg|based on novel|space marine|mutiny|loss of father&quot;</value>
+                  <value>&quot;dancing|based on novel|greece|dance|crete&quot;</value>
+                  <value>&quot;dancing|based on novel|revenge|native american|tied feet&quot;</value>
+                  <value>&quot;dancing|philadelphia|running|based on novel|depression&quot;</value>
+                  <value>&quot;dancing|sex|adultery|fortune teller|based on novel&quot;</value>
+                  <value>&quot;dc comics|superhero|based on comic book|police corruption|based on graphic novel&quot;</value>
+                  <value>&quot;diplomat|extramarital affair|novelist&quot;</value>
+                  <value>&quot;diving|ocean|female nudity|based on novel|treasure&quot;</value>
+                  <value>&quot;dream|imaginary friend|therapy|novelist|woman director&quot;</value>
+                  <value>&quot;dysfunctional family|independent film|trophy wife|tell all novel|failed children&quot;</value>
+                  <value>&quot;dystopia|based on comic book|based on graphic novel|black and white and color|black and white scene&quot;</value>
+                  <value>&quot;elves|orcs|middle-earth (tolkien)|based on novel|suspicion&quot;</value>
+                  <value>&quot;elves|orcs|middle-earth (tolkien)|hobbits|based on novel&quot;</value>
+                  <value>&quot;england|based on novel|cricket|birthday party&quot;</value>
+                  <value>&quot;england|based on novel|island|murder|agatha christie&quot;</value>
+                  <value>&quot;england|based on novel|kingdom|royalty|12th century&quot;</value>
+                  <value>&quot;england|based on novel|nightmare|uniform|murder&quot;</value>
+                  <value>&quot;england|train station|based on novel|bear|anthropomorphic animal&quot;</value>
+                  <value>&quot;falsely accused person|based on novel|marriage crisis|disappearance|cheating husband&quot;</value>
+                  <value>&quot;father-son relationship|based on novel|reincarnation|talking dog|car accident&quot;</value>
+                  <value>&quot;father-son relationship|capitalism|based on novel|smoking|lie&quot;</value>
+                  <value>&quot;father-son relationship|rape|based on novel|mountains|winter&quot;</value>
+                  <value>&quot;female nudity|africa|rape|based on novel|vagabund&quot;</value>
+                  <value>&quot;female nudity|based on novel|nudity|tarot cards|supernatural powers&quot;</value>
+                  <value>&quot;female nudity|based on novel|secret|hamster|nudity&quot;</value>
+                  <value>&quot;female nudity|based on novel|stripper|flop|black comedy&quot;</value>
+                  <value>&quot;female nudity|rape|fire|dancer|based on novel&quot;</value>
+                  <value>&quot;flying|scotland|based on novel|baby|ecstasy&quot;</value>
+                  <value>&quot;friendship|based on a children&apos;s book|anger issues|inspired by novel&quot;</value>
+                  <value>&quot;future|based on graphic novel|dystopic future|super powers&quot;</value>
+                  <value>&quot;future|joker|robin|based on graphic novel|dystopic future&quot;</value>
+                  <value>&quot;gambling|based on novel|beer|australia|independent film&quot;</value>
+                  <value>&quot;gambling|miami|based on novel|job|murder&quot;</value>
+                  <value>&quot;gambling|sex|casino|based on novel|vandalism&quot;</value>
+                  <value>&quot;gay|aids|based on novel|gay kiss|gay scene&quot;</value>
+                  <value>&quot;gay|based on novel|britain|united kingdom&quot;</value>
+                  <value>&quot;gay|male nudity|prison|based on novel|homophobia&quot;</value>
+                  <value>&quot;gay|self-fulfilling prophecy|based on novel|journalism|identity&quot;</value>
+                  <value>&quot;germany|based on novel|nazis|double agent&quot;</value>
+                  <value>&quot;germany|corruption|sex|based on novel|investigation&quot;</value>
+                  <value>&quot;helicopter|based on novel|airport|cataclysm|guitar&quot;</value>
+                  <value>&quot;helicopter|based on novel|honeymoon|airplane|birding&quot;</value>
+                  <value>&quot;helicopter|journalist|based on novel|terrorist|skyscraper&quot;</value>
+                  <value>&quot;holiday|based on novel|cat|fairy tale|donkey&quot;</value>
+                  <value>&quot;holiday|based on novel|monster|obsession|santa claus&quot;</value>
+                  <value>&quot;hotel|based on novel|bath|joke|health&quot;</value>
+                  <value>&quot;hotel|robbery|based on novel|judge|hawaii&quot;</value>
+                  <value>&quot;italy|based on novel|female friendship|vacation|chance encounter&quot;</value>
+                  <value>&quot;journalist|based on novel|hacker|punk|investigation&quot;</value>
+                  <value>&quot;journalist|based on novel|puppy|dog|duringcreditsstinger&quot;</value>
+                  <value>&quot;journalist|based on novel|undercover|dating|co-worker&quot;</value>
+                  <value>&quot;killing|based on novel|incest|morphing&quot;</value>
+                  <value>&quot;london|based on novel|bachelor|flat|gadget&quot;</value>
+                  <value>&quot;london|based on novel|key|adventure|supernatural&quot;</value>
+                  <value>&quot;london|based on novel|medium|ghost hunting|ghost hunter&quot;</value>
+                  <value>&quot;london|based on novel|plants|giant plant|alien life-form&quot;</value>
+                  <value>&quot;london|bomb|brother brother relationship|helicopter|based on novel&quot;</value>
+                  <value>&quot;london|father-son relationship|chocolate|factory worker|based on novel&quot;</value>
+                  <value>&quot;london|female nudity|women|countryside|based on novel&quot;</value>
+                  <value>&quot;love triangle|based on novel|homesickness|vororte|ship&quot;</value>
+                  <value>&quot;love triangle|based on novel|jealousy|radiation|tractor&quot;</value>
+                  <value>&quot;love|independent film|relationship|family|novelist&quot;</value>
+                  <value>&quot;male nudity|adultery|based on novel|infidelity|tv show&quot;</value>
+                  <value>&quot;male nudity|based on novel|nudity|murder|neighbor&quot;</value>
+                  <value>&quot;male nudity|based on novel|paranoia|nudity|halloween&quot;</value>
+                  <value>&quot;male nudity|female nudity|based on novel|cemetery|funeral&quot;</value>
+                  <value>&quot;male nudity|female nudity|based on novel|subconsciousness|nudity&quot;</value>
+                  <value>&quot;mississippi|based on novel|exploitation|racial segregation|racism&quot;</value>
+                  <value>&quot;moon|based on novel|space travel|moon landing|alien&quot;</value>
+                  <value>&quot;mother|child abuse|single parent|based on novel|smoking&quot;</value>
+                  <value>&quot;new york|adultery|based on novel|lolita|love&quot;</value>
+                  <value>&quot;new york|alcohol|based on novel|secret|cheating&quot;</value>
+                  <value>&quot;new york|based on novel|historical figure|theater|1930s&quot;</value>
+                  <value>&quot;new york|based on novel|shop|department store|shopping mall&quot;</value>
+                  <value>&quot;new york|hotel|based on novel|birthday|bath&quot;</value>
+                  <value>&quot;new york|male nudity|female nudity|sex|based on novel&quot;</value>
+                  <value>&quot;new york|prostitute|sex|based on novel|dream&quot;</value>
+                  <value>&quot;nurse|sex|based on novel|bondage|obsession&quot;</value>
+                  <value>&quot;paris|barcelona spain|assassin|based on novel|secret identity&quot;</value>
+                  <value>&quot;paris|corruption|madrid|assassin|based on novel&quot;</value>
+                  <value>&quot;paris|painter|detective|based on novel|screenwriter&quot;</value>
+                  <value>&quot;plagiarized book|stolen novel|plagiarized novel|aspiring writer&quot;</value>
+                  <value>&quot;poker|gambling|robbery|based on novel|hitman&quot;</value>
+                  <value>&quot;prison|based on novel|brother sister relationship|satanism|witness&quot;</value>
+                  <value>&quot;prison|chicago|rape|based on novel|hotel room&quot;</value>
+                  <value>&quot;rape|based on novel|peasant|historian|marriage&quot;</value>
+                  <value>&quot;rape|drowning|based on novel|lake|grave&quot;</value>
+                  <value>&quot;regret|based on novel|baseball|miracle|farm&quot;</value>
+                  <value>&quot;san francisco|hotel|detective|based on novel|airport&quot;</value>
+                  <value>&quot;saving the world|witch|based on novel|brother sister relationship|self sacrifice&quot;</value>
+                  <value>&quot;secret|book|psychiatrist|novelist|schizophrenic&quot;</value>
+                  <value>&quot;sex|adultery|based on novel|cat|infidelity&quot;</value>
+                  <value>&quot;sex|adultery|based on novel|fishing|isolation&quot;</value>
+                  <value>&quot;sex|adultery|confession|based on novel|obsession&quot;</value>
+                  <value>&quot;sex|american football|based on novel|texas|career&quot;</value>
+                  <value>&quot;sex|based on novel|mystery|disappearance|missing person&quot;</value>
+                  <value>&quot;sex|based on novel|nudity|friendship|high school&quot;</value>
+                  <value>&quot;sex|based on novel|nudity|nazis|government&quot;</value>
+                  <value>&quot;sex|based on novel|nudity|pregnancy and birth|paternity&quot;</value>
+                  <value>&quot;sex|based on novel|roommate|identity|secret&quot;</value>
+                  <value>&quot;sex|detention|based on graphic novel|preparatory school&quot;</value>
+                  <value>&quot;sheriff|based on novel|small town|strangeness|manipulation&quot;</value>
+                  <value>&quot;shyness|based on novel|unrequited love|neighbor|family relationships&quot;</value>
+                  <value>&quot;single parent|based on novel|expedition|professor|college&quot;</value>
+                  <value>&quot;soul|based on novel|sadness|forgiveness|dystopia&quot;</value>
+                  <value>&quot;spain|rape|based on novel|full moon|murder&quot;</value>
+                  <value>&quot;spy|based on novel|secret agent|sequel|james bond&quot;</value>
+                  <value>&quot;submarine|drowning|based on novel|rescue|disaster&quot;</value>
+                  <value>&quot;suicide|artificial intelligence|man vs machine|chicago|based on novel&quot;</value>
+                  <value>&quot;suicide|based on novel|hotel room|obsession|sadomasochism&quot;</value>
+                  <value>&quot;suicide|detective|based on novel|bondage|general&quot;</value>
+                  <value>&quot;suicide|england|alcohol|sex|based on novel&quot;</value>
+                  <value>&quot;suicide|england|based on novel|parents kids relationship|youngster&quot;</value>
+                  <value>&quot;suicide|gambling|manager|alcohol|based on novel&quot;</value>
+                  <value>&quot;suicide|male nudity|female nudity|hunter|based on novel&quot;</value>
+                  <value>&quot;suicide|prostitute|helicopter|based on novel|journalism&quot;</value>
+                  <value>&quot;suicide|sex|based on novel|explosive|architect&quot;</value>
+                  <value>&quot;suicide|sex|hotel|based on novel|newspaper&quot;</value>
+                  <value>&quot;superhero|based on comic book|noir|based on graphic novel|pulp&quot;</value>
+                  <value>&quot;tattoo|prison|based on novel|hostage|fight&quot;</value>
+                  <value>&quot;terror|based on novel|power|telekinesis|high school&quot;</value>
+                  <value>&quot;transylvania|female nudity|based on novel|monster|wolf&quot;</value>
+                  <value>&quot;underdog|based on novel|baseball|teamwork|partner&quot;</value>
+                  <value>&quot;upper class|brother brother relationship|scotland|poetry|based on novel&quot;</value>
+                  <value>&quot;video game|based on novel|space war|animation|halo&quot;</value>
+                  <value>&quot;vietnam veteran|hippie|mentally disabled|running|based on novel&quot;</value>
+                  <value>&quot;witch|based on novel|halloween|death|evil&quot;</value>
+                  <value>&quot;witch|based on novel|new love|prince|beauty&quot;</value>
+                  <value>&quot;witch|based on novel|scarecrow|the muppets|wizard of oz&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[keywords]' role='dimension' type='nominal' />
+            <column-instance column='[release_month]' derivation='None' name='[none:release_month:nk]' pivot='key' type='nominal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[release_date]' derivation='Quarter' name='[qr:release_date:ok]' pivot='key' type='ordinal' />
+            <column caption='Release Date' datatype='date' name='[release_date]' role='dimension' type='ordinal' />
+            <column caption='Release Month' datatype='string' name='[release_month]' role='dimension' type='nominal' />
+            <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column caption='Revenue' datatype='integer' name='[revenue]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.18etttg1po300a1eecj8p1d9gwix].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[avg:budget:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[avg:revenue:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[avg:Calculation_673569642447650817:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <sort class='manual' column='[federated.18etttg1po300a1eecj8p1d9gwix].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[avg:budget:qk]&quot;</bucket>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[avg:revenue:qk]&quot;</bucket>
+              <bucket>&quot;[federated.18etttg1po300a1eecj8p1d9gwix].[avg:Calculation_673569642447650817:qk]&quot;</bucket>
+            </dictionary>
+          </sort>
+          <slices>
+            <column>[federated.18etttg1po300a1eecj8p1d9gwix].[:Measure Names]</column>
+            <column>[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_month:nk]</column>
+            <column>[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_year:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[Multiple Values]' scope='rows' value='Amount in $' />
+            <format attr='subtitle' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[Multiple Values]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[Multiple Values]' scope='rows' value='true' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <encodings>
+              <color column='[federated.18etttg1po300a1eecj8p1d9gwix].[:Measure Names]' />
+              <shape column='[federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value='asterisk' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.18etttg1po300a1eecj8p1d9gwix].[Multiple Values]</rows>
+        <cols>([federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)] / ([federated.18etttg1po300a1eecj8p1d9gwix].[:Measure Names] / [federated.18etttg1po300a1eecj8p1d9gwix].[qr:release_date:ok]))</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Sheet1 (final)' name='federated.18etttg1po300a1eecj8p1d9gwix' />
+          </datasources>
+          <datasource-dependencies datasource='federated.18etttg1po300a1eecj8p1d9gwix'>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[popularity]' derivation='Avg' name='[avg:popularity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[runtime]' derivation='Avg' name='[avg:runtime:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[vote_average]' derivation='Avg' name='[avg:vote_average:qk]' pivot='key' type='quantitative' />
+            <column caption='Movies_group' datatype='string' name='[keywords (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[keywords]' default='&quot;Not based on novel&quot;' new-bin='true'>
+                <bin default-name='false' value='&quot;Based on novel&quot;'>
+                  <value>&quot;1970s|teenage girl|older man younger woman relationship|based on graphic novel|teenage sexuality&quot;</value>
+                  <value>&quot;adolescence|based on novel|loss of child|fight|chase&quot;</value>
+                  <value>&quot;adultery|based on novel|love|lieutenant|tragedy&quot;</value>
+                  <value>&quot;adultery|journalist|based on novel|newspaper|unfaithfulness&quot;</value>
+                  <value>&quot;adultery|robbery|based on novel|professor|college&quot;</value>
+                  <value>&quot;africa|based on novel|child soldier&quot;</value>
+                  <value>&quot;alcohol|based on novel|burglar|trainer|police&quot;</value>
+                  <value>&quot;alcohol|sex|detective|confession|based on novel&quot;</value>
+                  <value>&quot;ambush|helicopter|journalist|based on novel|airport&quot;</value>
+                  <value>&quot;amsterdam|based on novel|support group|cancer|teenager&quot;</value>
+                  <value>&quot;angel|based on novel|supernatural|fallen angel|orphan&quot;</value>
+                  <value>&quot;angel|sex|robbery|based on novel|karaoke&quot;</value>
+                  <value>&quot;based on graphic novel|ancient greece|duringcreditsstinger|sea battle|hand to hand combat&quot;</value>
+                  <value>&quot;based on graphic novel|homework|shot in the chin|soft boiled egg|learning to drive&quot;</value>
+                  <value>&quot;based on graphic novel|multiple personality|psychiatric&quot;</value>
+                  <value>&quot;based on novel&quot;</value>
+                  <value>&quot;based on novel|1970s|private investigator|smoking marijuana|los angeles&quot;</value>
+                  <value>&quot;based on novel|1970s|thanksgiving|dysfunctional family|independent film&quot;</value>
+                  <value>&quot;based on novel|adoption|pregnant|miscarriage|expectant father&quot;</value>
+                  <value>&quot;based on novel|army|love|u.s. soldier|nicholas sparks&quot;</value>
+                  <value>&quot;based on novel|art student|cowboys|injury|bull riding&quot;</value>
+                  <value>&quot;based on novel|attack|massacre|private&quot;</value>
+                  <value>&quot;based on novel|australia|dressmaker|hometown|woman director&quot;</value>
+                  <value>&quot;based on novel|baltimore|kidnapping|missing child|baltimore maryland&quot;</value>
+                  <value>&quot;based on novel|billionaire|bdsm|woman director|erotic movie&quot;</value>
+                  <value>&quot;based on novel|biography|based on true story&quot;</value>
+                  <value>&quot;based on novel|biography|historical figure|marilyn monroe&quot;</value>
+                  <value>&quot;based on novel|biography|police|woods|ufo&quot;</value>
+                  <value>&quot;based on novel|brother sister relationship|canada|village|love&quot;</value>
+                  <value>&quot;based on novel|burning of witches|puritan|period piece|pregnancy&quot;</value>
+                  <value>&quot;based on novel|callboy|romantic comedy|wedding|escort&quot;</value>
+                  <value>&quot;based on novel|canada|island|chicken|horse&quot;</value>
+                  <value>&quot;based on novel|carpet|isolation|imprisonment|grandparents&quot;</value>
+                  <value>&quot;based on novel|celebrity|based on true story|gay relationship|gay interest&quot;</value>
+                  <value>&quot;based on novel|cemetery|isolation|stage|nudity&quot;</value>
+                  <value>&quot;based on novel|character name in title|middle school&quot;</value>
+                  <value>&quot;based on novel|character name in title|police detective&quot;</value>
+                  <value>&quot;based on novel|charles dickens&quot;</value>
+                  <value>&quot;based on novel|comedian|job|love|male female relationship&quot;</value>
+                  <value>&quot;based on novel|coming of age|duringcreditsstinger&quot;</value>
+                  <value>&quot;based on novel|coming of age|young boy|middle school|popularity&quot;</value>
+                  <value>&quot;based on novel|commercial|brother sister relationship|secret|kiss&quot;</value>
+                  <value>&quot;based on novel|desperation|robber|hold-up robbery|remake&quot;</value>
+                  <value>&quot;based on novel|dinosaur|sir arthur conan doyle|lost continent&quot;</value>
+                  <value>&quot;based on novel|drug dealer|ex-cop|rural setting|undercover cop&quot;</value>
+                  <value>&quot;based on novel|dystopia|love|teenager|failed tv pilot&quot;</value>
+                  <value>&quot;based on novel|dystopia|youth|dystopic future|caste system&quot;</value>
+                  <value>&quot;based on novel|faith|based on true events&quot;</value>
+                  <value>&quot;based on novel|fictional place|lion|human being|wretch&quot;</value>
+                  <value>&quot;based on novel|fictional place|queen|alice in wonderland|fantastic&quot;</value>
+                  <value>&quot;based on novel|fictional place|wolf|mythology|magic&quot;</value>
+                  <value>&quot;based on novel|foster sister|moor|yorkshire england|foster family&quot;</value>
+                  <value>&quot;based on novel|fox|foxhunting|friendship|dog&quot;</value>
+                  <value>&quot;based on novel|friendship|coming of age|railroad track|story within the story&quot;</value>
+                  <value>&quot;based on novel|funeral|dysfunctional family|death of father|man child&quot;</value>
+                  <value>&quot;based on novel|garden|loss of parents|magic potion|aunt&quot;</value>
+                  <value>&quot;based on novel|gold|treasure|coffin|human being-animal relationship&quot;</value>
+                  <value>&quot;based on novel|harvard university|college|drama|cancer&quot;</value>
+                  <value>&quot;based on novel|haunted house|gothic horror|made for television&quot;</value>
+                  <value>&quot;based on novel|haunted house|supernatural|sequel|haunting&quot;</value>
+                  <value>&quot;based on novel|high school|teenager|teen comedy|multiple storylines&quot;</value>
+                  <value>&quot;based on novel|high society|imperial russia|saint petersburg|tragic death&quot;</value>
+                  <value>&quot;based on novel|independent film&quot;</value>
+                  <value>&quot;based on novel|indian|servant|secret|garden&quot;</value>
+                  <value>&quot;based on novel|infidelity|obsession|hope|3d&quot;</value>
+                  <value>&quot;based on novel|interracial relationship|single mother|divorce|chick flick&quot;</value>
+                  <value>&quot;based on novel|intolerance|chosen one|child prodigy|futuristic&quot;</value>
+                  <value>&quot;based on novel|island|hurricane|investigation|psychiatric hospital&quot;</value>
+                  <value>&quot;based on novel|japanese|world war ii|battle assignment|invasion&quot;</value>
+                  <value>&quot;based on novel|job interview|bad luck|wish|one day&quot;</value>
+                  <value>&quot;based on novel|key|scavenger hunt|death of father|young boy&quot;</value>
+                  <value>&quot;based on novel|loser|magazine|womanizer|mission&quot;</value>
+                  <value>&quot;based on novel|love|beautiful woman|curse|teenager&quot;</value>
+                  <value>&quot;based on novel|magic|fantasy|family|3d&quot;</value>
+                  <value>&quot;based on novel|magic|good vs evil|king|narnia&quot;</value>
+                  <value>&quot;based on novel|make a match|jane austen|matchmaking&quot;</value>
+                  <value>&quot;based on novel|male female relationship|teenage pregnancy|best friends in love|missed opportunity&quot;</value>
+                  <value>&quot;based on novel|mars|medaillon|cave|future&quot;</value>
+                  <value>&quot;based on novel|mars|nasa|isolation|botanist&quot;</value>
+                  <value>&quot;based on novel|mass murder|dystopia|two word title|genocide&quot;</value>
+                  <value>&quot;based on novel|maze|post-apocalyptic|dystopia|escape&quot;</value>
+                  <value>&quot;based on novel|mentor|secret|factory|television&quot;</value>
+                  <value>&quot;based on novel|middle school|female lead|woman director&quot;</value>
+                  <value>&quot;based on novel|mother daughter relationship|chinese|family|chinese american&quot;</value>
+                  <value>&quot;based on novel|murder|mafia|private investigator|new york city&quot;</value>
+                  <value>&quot;based on novel|musical|color in title|based on stage musical|woman director&quot;</value>
+                  <value>&quot;based on novel|musical|drug|cult classic&quot;</value>
+                  <value>&quot;based on novel|mythical creature|dragon|fantasy world|teenage hero&quot;</value>
+                  <value>&quot;based on novel|nasa|new mexico|extraterrestrial technology|prime number&quot;</value>
+                  <value>&quot;based on novel|new love|love of one&apos;s life|retiree|aging&quot;</value>
+                  <value>&quot;based on novel|nightmare|stranger&quot;</value>
+                  <value>&quot;based on novel|obsession|hero|harpoon|revenge&quot;</value>
+                  <value>&quot;based on novel|optimism|switzerland|baseball|famous score&quot;</value>
+                  <value>&quot;based on novel|painting|debt|art dealer|stolen painting&quot;</value>
+                  <value>&quot;based on novel|paralysis|revenge|rage|monkey&quot;</value>
+                  <value>&quot;based on novel|photographer|baseball|dollar|remake&quot;</value>
+                  <value>&quot;based on novel|poverty|rural|burial|faulkner&quot;</value>
+                  <value>&quot;based on novel|prohibition|brother|bootlegging|1930s&quot;</value>
+                  <value>&quot;based on novel|psychoanalysis|sigmund freud|biography|spanking&quot;</value>
+                  <value>&quot;based on novel|psychopath|horror|suspense|serial killer&quot;</value>
+                  <value>&quot;based on novel|race politics|apartheid&quot;</value>
+                  <value>&quot;based on novel|resistance|maze|post-apocalyptic|dystopia&quot;</value>
+                  <value>&quot;based on novel|revolution|dystopia|sequel|dystopic future&quot;</value>
+                  <value>&quot;based on novel|role reversal|school|teen movie|body-swap&quot;</value>
+                  <value>&quot;based on novel|secret|professor|nudity|supernatural&quot;</value>
+                  <value>&quot;based on novel|secret|puberty|book|one-sided love&quot;</value>
+                  <value>&quot;based on novel|servant|private school|female friendship|boarding school&quot;</value>
+                  <value>&quot;based on novel|sister sister relationship|cult classic|old mansion|film actresses&quot;</value>
+                  <value>&quot;based on novel|sister sister relationship|flirt|loss of sister|new love&quot;</value>
+                  <value>&quot;based on novel|small town|widower|single father|nicholas sparks&quot;</value>
+                  <value>&quot;based on novel|sniper|investigation|police|character name in title&quot;</value>
+                  <value>&quot;based on novel|sniper|widow|retirement&quot;</value>
+                  <value>&quot;based on novel|sport|bodybuilding|gym&quot;</value>
+                  <value>&quot;based on novel|stop motion animation|father daughter relationship|unlikely friendship|duringcreditsstinger&quot;</value>
+                  <value>&quot;based on novel|suicidal|death of lover|teacher student relationship|lgbt&quot;</value>
+                  <value>&quot;based on novel|suicide attempt|dream|victim of murder|kidnapping and murder&quot;</value>
+                  <value>&quot;based on novel|suicide attempt|puberty|biography|borderline personality disorder&quot;</value>
+                  <value>&quot;based on novel|tarzan|motion capture&quot;</value>
+                  <value>&quot;based on novel|theatre group|north carolina|theatre milieu|high school&quot;</value>
+                  <value>&quot;based on novel|tradition|holocaust|nazis|rabbi&quot;</value>
+                  <value>&quot;based on novel|underwear|wall street|psychopath|ronald reagan&quot;</value>
+                  <value>&quot;based on novel|voodoo|kiss|princess|animation&quot;</value>
+                  <value>&quot;based on novel|waitress|passion|love|advertising executive&quot;</value>
+                  <value>&quot;based on novel|water|remake|teacher|divorce&quot;</value>
+                  <value>&quot;based on novel|werewolf|duringcreditsstinger&quot;</value>
+                  <value>&quot;based on novel|wife husband relationship|photo|kennel|playing chess&quot;</value>
+                  <value>&quot;based on novel|witness|village|court|love&quot;</value>
+                  <value>&quot;based on novel|woman director&quot;</value>
+                  <value>&quot;based on novel|world war i|war|love affair|united kingdom&quot;</value>
+                  <value>&quot;based on novel|world war ii|fort|allied|army&quot;</value>
+                  <value>&quot;based on novel|world war ii|love|french resistance|nazi occupation&quot;</value>
+                  <value>&quot;based on novel|world war ii|nazis|castle|secret mission&quot;</value>
+                  <value>&quot;based on novel|wyoming|saloon|buffalo|native american&quot;</value>
+                  <value>&quot;based on novel|yuppie|kidnapper|porsche|kidnapping&quot;</value>
+                  <value>&quot;berlin|assassin|based on novel|amnesia|sniper&quot;</value>
+                  <value>&quot;black people|based on novel|brother sister relationship|becoming an adult|isolation&quot;</value>
+                  <value>&quot;black people|based on novel|holocaust|ghetto|diary&quot;</value>
+                  <value>&quot;bomb|based on novel|airport|desperation|snow storm&quot;</value>
+                  <value>&quot;bomb|sex|based on novel|experiment|nudity&quot;</value>
+                  <value>&quot;bounty hunter|based on novel|framed|money in title|bail jumper&quot;</value>
+                  <value>&quot;bowling|based on novel|servant|country life|jane austen&quot;</value>
+                  <value>&quot;brother brother relationship|based on novel|cat|mouse|adoption&quot;</value>
+                  <value>&quot;brother brother relationship|based on novel|sailing|ghost|young adult&quot;</value>
+                  <value>&quot;brother brother relationship|elves|based on novel|santa claus&quot;</value>
+                  <value>&quot;bureaucracy|england|dolphin|android|based on novel&quot;</value>
+                  <value>&quot;california|detective|based on novel|dream|chase&quot;</value>
+                  <value>&quot;california|detective|based on novel|dream|undercover&quot;</value>
+                  <value>&quot;california|sex|runaway|based on novel|friends&quot;</value>
+                  <value>&quot;chicago|sex|based on novel|nudity|diary&quot;</value>
+                  <value>&quot;child abuse|detective|based on novel|bar|island&quot;</value>
+                  <value>&quot;chocolate|factory worker|based on novel|candy|tv addicted person&quot;</value>
+                  <value>&quot;cia|based on novel|cheerleader|murder|mother daughter relationship&quot;</value>
+                  <value>&quot;circus|witch|based on novel|lightning|dream&quot;</value>
+                  <value>&quot;coma|based on novel|workaholic|flirt|architect&quot;</value>
+                  <value>&quot;competition|based on novel|shark attack|surfing|biography&quot;</value>
+                  <value>&quot;confession|based on novel|birthday|nudity|cruise&quot;</value>
+                  <value>&quot;corruption|assassination|based on novel|senator|surprise ending&quot;</value>
+                  <value>&quot;corruption|journalist|based on novel|blackmail|manipulation&quot;</value>
+                  <value>&quot;corruption|robbery|detective|based on novel|boston&quot;</value>
+                  <value>&quot;cyborg|based on novel|space marine|mutiny|loss of father&quot;</value>
+                  <value>&quot;dancing|based on novel|greece|dance|crete&quot;</value>
+                  <value>&quot;dancing|based on novel|revenge|native american|tied feet&quot;</value>
+                  <value>&quot;dancing|philadelphia|running|based on novel|depression&quot;</value>
+                  <value>&quot;dancing|sex|adultery|fortune teller|based on novel&quot;</value>
+                  <value>&quot;dc comics|superhero|based on comic book|police corruption|based on graphic novel&quot;</value>
+                  <value>&quot;diplomat|extramarital affair|novelist&quot;</value>
+                  <value>&quot;diving|ocean|female nudity|based on novel|treasure&quot;</value>
+                  <value>&quot;dream|imaginary friend|therapy|novelist|woman director&quot;</value>
+                  <value>&quot;dysfunctional family|independent film|trophy wife|tell all novel|failed children&quot;</value>
+                  <value>&quot;dystopia|based on comic book|based on graphic novel|black and white and color|black and white scene&quot;</value>
+                  <value>&quot;elves|orcs|middle-earth (tolkien)|based on novel|suspicion&quot;</value>
+                  <value>&quot;elves|orcs|middle-earth (tolkien)|hobbits|based on novel&quot;</value>
+                  <value>&quot;england|based on novel|cricket|birthday party&quot;</value>
+                  <value>&quot;england|based on novel|island|murder|agatha christie&quot;</value>
+                  <value>&quot;england|based on novel|kingdom|royalty|12th century&quot;</value>
+                  <value>&quot;england|based on novel|nightmare|uniform|murder&quot;</value>
+                  <value>&quot;england|train station|based on novel|bear|anthropomorphic animal&quot;</value>
+                  <value>&quot;falsely accused person|based on novel|marriage crisis|disappearance|cheating husband&quot;</value>
+                  <value>&quot;father-son relationship|based on novel|reincarnation|talking dog|car accident&quot;</value>
+                  <value>&quot;father-son relationship|capitalism|based on novel|smoking|lie&quot;</value>
+                  <value>&quot;father-son relationship|rape|based on novel|mountains|winter&quot;</value>
+                  <value>&quot;female nudity|africa|rape|based on novel|vagabund&quot;</value>
+                  <value>&quot;female nudity|based on novel|nudity|tarot cards|supernatural powers&quot;</value>
+                  <value>&quot;female nudity|based on novel|secret|hamster|nudity&quot;</value>
+                  <value>&quot;female nudity|based on novel|stripper|flop|black comedy&quot;</value>
+                  <value>&quot;female nudity|rape|fire|dancer|based on novel&quot;</value>
+                  <value>&quot;flying|scotland|based on novel|baby|ecstasy&quot;</value>
+                  <value>&quot;friendship|based on a children&apos;s book|anger issues|inspired by novel&quot;</value>
+                  <value>&quot;future|based on graphic novel|dystopic future|super powers&quot;</value>
+                  <value>&quot;future|joker|robin|based on graphic novel|dystopic future&quot;</value>
+                  <value>&quot;gambling|based on novel|beer|australia|independent film&quot;</value>
+                  <value>&quot;gambling|miami|based on novel|job|murder&quot;</value>
+                  <value>&quot;gambling|sex|casino|based on novel|vandalism&quot;</value>
+                  <value>&quot;gay|aids|based on novel|gay kiss|gay scene&quot;</value>
+                  <value>&quot;gay|based on novel|britain|united kingdom&quot;</value>
+                  <value>&quot;gay|male nudity|prison|based on novel|homophobia&quot;</value>
+                  <value>&quot;gay|self-fulfilling prophecy|based on novel|journalism|identity&quot;</value>
+                  <value>&quot;germany|based on novel|nazis|double agent&quot;</value>
+                  <value>&quot;germany|corruption|sex|based on novel|investigation&quot;</value>
+                  <value>&quot;helicopter|based on novel|airport|cataclysm|guitar&quot;</value>
+                  <value>&quot;helicopter|based on novel|honeymoon|airplane|birding&quot;</value>
+                  <value>&quot;helicopter|journalist|based on novel|terrorist|skyscraper&quot;</value>
+                  <value>&quot;holiday|based on novel|cat|fairy tale|donkey&quot;</value>
+                  <value>&quot;holiday|based on novel|monster|obsession|santa claus&quot;</value>
+                  <value>&quot;hotel|based on novel|bath|joke|health&quot;</value>
+                  <value>&quot;hotel|robbery|based on novel|judge|hawaii&quot;</value>
+                  <value>&quot;italy|based on novel|female friendship|vacation|chance encounter&quot;</value>
+                  <value>&quot;journalist|based on novel|hacker|punk|investigation&quot;</value>
+                  <value>&quot;journalist|based on novel|puppy|dog|duringcreditsstinger&quot;</value>
+                  <value>&quot;journalist|based on novel|undercover|dating|co-worker&quot;</value>
+                  <value>&quot;killing|based on novel|incest|morphing&quot;</value>
+                  <value>&quot;london|based on novel|bachelor|flat|gadget&quot;</value>
+                  <value>&quot;london|based on novel|key|adventure|supernatural&quot;</value>
+                  <value>&quot;london|based on novel|medium|ghost hunting|ghost hunter&quot;</value>
+                  <value>&quot;london|based on novel|plants|giant plant|alien life-form&quot;</value>
+                  <value>&quot;london|bomb|brother brother relationship|helicopter|based on novel&quot;</value>
+                  <value>&quot;london|father-son relationship|chocolate|factory worker|based on novel&quot;</value>
+                  <value>&quot;london|female nudity|women|countryside|based on novel&quot;</value>
+                  <value>&quot;love triangle|based on novel|homesickness|vororte|ship&quot;</value>
+                  <value>&quot;love triangle|based on novel|jealousy|radiation|tractor&quot;</value>
+                  <value>&quot;love|independent film|relationship|family|novelist&quot;</value>
+                  <value>&quot;male nudity|adultery|based on novel|infidelity|tv show&quot;</value>
+                  <value>&quot;male nudity|based on novel|nudity|murder|neighbor&quot;</value>
+                  <value>&quot;male nudity|based on novel|paranoia|nudity|halloween&quot;</value>
+                  <value>&quot;male nudity|female nudity|based on novel|cemetery|funeral&quot;</value>
+                  <value>&quot;male nudity|female nudity|based on novel|subconsciousness|nudity&quot;</value>
+                  <value>&quot;mississippi|based on novel|exploitation|racial segregation|racism&quot;</value>
+                  <value>&quot;moon|based on novel|space travel|moon landing|alien&quot;</value>
+                  <value>&quot;mother|child abuse|single parent|based on novel|smoking&quot;</value>
+                  <value>&quot;new york|adultery|based on novel|lolita|love&quot;</value>
+                  <value>&quot;new york|alcohol|based on novel|secret|cheating&quot;</value>
+                  <value>&quot;new york|based on novel|historical figure|theater|1930s&quot;</value>
+                  <value>&quot;new york|based on novel|shop|department store|shopping mall&quot;</value>
+                  <value>&quot;new york|hotel|based on novel|birthday|bath&quot;</value>
+                  <value>&quot;new york|male nudity|female nudity|sex|based on novel&quot;</value>
+                  <value>&quot;new york|prostitute|sex|based on novel|dream&quot;</value>
+                  <value>&quot;nurse|sex|based on novel|bondage|obsession&quot;</value>
+                  <value>&quot;paris|barcelona spain|assassin|based on novel|secret identity&quot;</value>
+                  <value>&quot;paris|corruption|madrid|assassin|based on novel&quot;</value>
+                  <value>&quot;paris|painter|detective|based on novel|screenwriter&quot;</value>
+                  <value>&quot;plagiarized book|stolen novel|plagiarized novel|aspiring writer&quot;</value>
+                  <value>&quot;poker|gambling|robbery|based on novel|hitman&quot;</value>
+                  <value>&quot;prison|based on novel|brother sister relationship|satanism|witness&quot;</value>
+                  <value>&quot;prison|chicago|rape|based on novel|hotel room&quot;</value>
+                  <value>&quot;rape|based on novel|peasant|historian|marriage&quot;</value>
+                  <value>&quot;rape|drowning|based on novel|lake|grave&quot;</value>
+                  <value>&quot;regret|based on novel|baseball|miracle|farm&quot;</value>
+                  <value>&quot;san francisco|hotel|detective|based on novel|airport&quot;</value>
+                  <value>&quot;saving the world|witch|based on novel|brother sister relationship|self sacrifice&quot;</value>
+                  <value>&quot;secret|book|psychiatrist|novelist|schizophrenic&quot;</value>
+                  <value>&quot;sex|adultery|based on novel|cat|infidelity&quot;</value>
+                  <value>&quot;sex|adultery|based on novel|fishing|isolation&quot;</value>
+                  <value>&quot;sex|adultery|confession|based on novel|obsession&quot;</value>
+                  <value>&quot;sex|american football|based on novel|texas|career&quot;</value>
+                  <value>&quot;sex|based on novel|mystery|disappearance|missing person&quot;</value>
+                  <value>&quot;sex|based on novel|nudity|friendship|high school&quot;</value>
+                  <value>&quot;sex|based on novel|nudity|nazis|government&quot;</value>
+                  <value>&quot;sex|based on novel|nudity|pregnancy and birth|paternity&quot;</value>
+                  <value>&quot;sex|based on novel|roommate|identity|secret&quot;</value>
+                  <value>&quot;sex|detention|based on graphic novel|preparatory school&quot;</value>
+                  <value>&quot;sheriff|based on novel|small town|strangeness|manipulation&quot;</value>
+                  <value>&quot;shyness|based on novel|unrequited love|neighbor|family relationships&quot;</value>
+                  <value>&quot;single parent|based on novel|expedition|professor|college&quot;</value>
+                  <value>&quot;soul|based on novel|sadness|forgiveness|dystopia&quot;</value>
+                  <value>&quot;spain|rape|based on novel|full moon|murder&quot;</value>
+                  <value>&quot;spy|based on novel|secret agent|sequel|james bond&quot;</value>
+                  <value>&quot;submarine|drowning|based on novel|rescue|disaster&quot;</value>
+                  <value>&quot;suicide|artificial intelligence|man vs machine|chicago|based on novel&quot;</value>
+                  <value>&quot;suicide|based on novel|hotel room|obsession|sadomasochism&quot;</value>
+                  <value>&quot;suicide|detective|based on novel|bondage|general&quot;</value>
+                  <value>&quot;suicide|england|alcohol|sex|based on novel&quot;</value>
+                  <value>&quot;suicide|england|based on novel|parents kids relationship|youngster&quot;</value>
+                  <value>&quot;suicide|gambling|manager|alcohol|based on novel&quot;</value>
+                  <value>&quot;suicide|male nudity|female nudity|hunter|based on novel&quot;</value>
+                  <value>&quot;suicide|prostitute|helicopter|based on novel|journalism&quot;</value>
+                  <value>&quot;suicide|sex|based on novel|explosive|architect&quot;</value>
+                  <value>&quot;suicide|sex|hotel|based on novel|newspaper&quot;</value>
+                  <value>&quot;superhero|based on comic book|noir|based on graphic novel|pulp&quot;</value>
+                  <value>&quot;tattoo|prison|based on novel|hostage|fight&quot;</value>
+                  <value>&quot;terror|based on novel|power|telekinesis|high school&quot;</value>
+                  <value>&quot;transylvania|female nudity|based on novel|monster|wolf&quot;</value>
+                  <value>&quot;underdog|based on novel|baseball|teamwork|partner&quot;</value>
+                  <value>&quot;upper class|brother brother relationship|scotland|poetry|based on novel&quot;</value>
+                  <value>&quot;video game|based on novel|space war|animation|halo&quot;</value>
+                  <value>&quot;vietnam veteran|hippie|mentally disabled|running|based on novel&quot;</value>
+                  <value>&quot;witch|based on novel|halloween|death|evil&quot;</value>
+                  <value>&quot;witch|based on novel|new love|prince|beauty&quot;</value>
+                  <value>&quot;witch|based on novel|scarecrow|the muppets|wizard of oz&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[keywords]' role='dimension' type='nominal' />
+            <column-instance column='[release_month]' derivation='None' name='[none:release_month:nk]' pivot='key' type='nominal' />
+            <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
+            <column caption='Popularity' datatype='real' name='[popularity]' role='measure' type='quantitative' />
+            <column caption='Release Month' datatype='string' name='[release_month]' role='dimension' type='nominal' />
+            <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+            <column caption='Runtime' datatype='real' name='[runtime]' role='measure' type='quantitative' />
+            <column-instance column='[Number of Records]' derivation='Sum' name='[sum:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Vote Average' datatype='integer' name='[vote_average]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_year:qk]</column>
+            <column>[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_month:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[sum:Number of Records:qk]' scope='rows' value='Count' />
+            <format attr='subtitle' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[sum:Number of Records:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[sum:Number of Records:qk]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:vote_average:qk]' scope='rows' value='Votes' />
+            <format attr='subtitle' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:vote_average:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:vote_average:qk]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:popularity:qk]' scope='rows' value=' Popularity' />
+            <format attr='subtitle' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:popularity:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:popularity:qk]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:runtime:qk]' scope='rows' value=' Runtime' />
+            <format attr='subtitle' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:runtime:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:runtime:qk]' scope='rows' value='true' />
+            <format attr='width' field='[federated.18etttg1po300a1eecj8p1d9gwix].[sum:Number of Records:qk]' value='76' />
+            <format attr='width' field='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:runtime:qk]' value='76' />
+            <format attr='width' field='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:popularity:qk]' value='76' />
+            <format attr='width' field='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:vote_average:qk]' value='76' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)]' value='16' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.18etttg1po300a1eecj8p1d9gwix].[sum:Number of Records:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minheight' value='95' />
+                <format attr='maxheight' value='95' />
+                <format attr='minwidth' value='355' />
+                <format attr='maxwidth' value='355' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.18etttg1po300a1eecj8p1d9gwix].[sum:Number of Records:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)]' />
+            </encodings>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:runtime:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)]' />
+            </encodings>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:popularity:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)]' />
+            </encodings>
+          </pane>
+          <pane id='7' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.18etttg1po300a1eecj8p1d9gwix].[avg:vote_average:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.18etttg1po300a1eecj8p1d9gwix].[sum:Number of Records:qk] + ([federated.18etttg1po300a1eecj8p1d9gwix].[avg:runtime:qk] + ([federated.18etttg1po300a1eecj8p1d9gwix].[avg:popularity:qk] + [federated.18etttg1po300a1eecj8p1d9gwix].[avg:vote_average:qk])))</rows>
+        <cols>([federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)] * [federated.18etttg1po300a1eecj8p1d9gwix].[none:release_year:qk])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Q_3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4f4f4f' fontname='Open Sans,Helvetica,sans-serif' fontsize='13' underline='true'>How have movies based on novels performed relative to movies not based on novels?</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='600' maxwidth='800' minheight='600' minwidth='800' preset-index='3' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='Sheet1 (final)' name='federated.18etttg1po300a1eecj8p1d9gwix' />
+      </datasources>
+      <datasource-dependencies datasource='federated.18etttg1po300a1eecj8p1d9gwix'>
+        <column-instance column='[release_month]' derivation='None' name='[none:release_month:nk]' pivot='key' type='nominal' />
+        <column-instance column='[release_year]' derivation='None' name='[none:release_year:qk]' pivot='key' type='quantitative' />
+        <column caption='Release Month' datatype='string' name='[release_month]' role='dimension' type='nominal' />
+        <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      </datasource-dependencies>
+      <zones use-insets='false'>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97334' id='14' param='vert' type='layout-flow' w='98000' x='1000' y='1333'>
+            <zone fixed-size='39' h='7833' id='15' is-fixed='true' type='title' w='98000' x='1000' y='1333'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='89501' id='5' param='horz' type='layout-flow' w='98000' x='1000' y='9166'>
+              <zone h='89501' id='3' type='layout-basic' w='79750' x='1000' y='9166'>
+                <zone h='48667' id='1' name='Sheet 2' show-title='false' w='79750' x='1000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='40834' id='9' name='Sheet 1' show-title='false' w='79750' x='1000' y='9166'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='146' h='89501' id='4' is-fixed='true' param='vert' type='layout-flow' w='18250' x='80750' y='9166'>
+                <zone h='14333' id='12' name='Sheet 1' pane-specification-id='0' param='[federated.18etttg1po300a1eecj8p1d9gwix].[:Measure Names]' type='color' w='18250' x='80750' y='9166'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='67' h='12500' id='7' is-fixed='true' name='Sheet 2' param='[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_year:qk]' show-domain='false' show-null-ctrls='false' type='filter' w='18250' x='80750' y='23499'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='46500' id='6' mode='radiolist' name='Sheet 2' param='[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_month:nk]' type='filter' w='18250' x='80750' y='35999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='63' h='11833' id='8' is-fixed='true' name='Sheet 2' pane-specification-id='4' param='[federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)]' type='color' w='18250' x='80750' y='82499'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Q_3'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card mode='radiolist' param='[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_month:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.18etttg1po300a1eecj8p1d9gwix].[:Measure Names]' type='color' />
+            <card pane-specification-id='0' param='[federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)]' type='shape' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.18etttg1po300a1eecj8p1d9gwix].[:Measure Names]</field>
+            <field>[federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)]</field>
+            <field>[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_month:nk]</field>
+            <field>[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_year:qk]</field>
+            <field>[federated.18etttg1po300a1eecj8p1d9gwix].[tyr:release_date:qk]</field>
+            <field>[federated.18etttg1po300a1eecj8p1d9gwix].[yr:release_date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' hidden='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_month:nk]' type='filter' />
+            <card param='[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_year:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='4' param='[federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.18etttg1po300a1eecj8p1d9gwix].[keywords (group)]</field>
+            <field>[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_month:nk]</field>
+            <field>[federated.18etttg1po300a1eecj8p1d9gwix].[none:release_year:qk]</field>
+            <field>[federated.18etttg1po300a1eecj8p1d9gwix].[sum:Number of Records:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Q_3' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

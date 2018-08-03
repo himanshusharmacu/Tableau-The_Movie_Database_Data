@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">E:\Business Nanodegree\Project-5\project3-1\cleaned.csv</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>cleaned.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="imdb_id" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="popularity" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="budget" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="revenue" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="original_title" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="cast" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="director" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="runtime" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="genres" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="production_companies" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="release_date" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="vote_count" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="vote_average" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="release_year" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="budget_adj" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="revenue_adj" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="release_month" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="release_month_num" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="150" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Field_1" selected="True" />
+            <Field field="imdb_id" selected="True" />
+            <Field field="popularity" selected="True" />
+            <Field field="budget" selected="True" />
+            <Field field="revenue" selected="True" />
+            <Field field="original_title" selected="True" />
+            <Field field="cast" selected="True" />
+            <Field field="director" selected="True" />
+            <Field field="runtime" selected="True" />
+            <Field field="genres" selected="True" />
+            <Field field="production_companies" selected="True" />
+            <Field field="release_date" selected="True" />
+            <Field field="vote_count" selected="True" />
+            <Field field="vote_average" selected="True" />
+            <Field field="release_year" selected="True" />
+            <Field field="budget_adj" selected="True" />
+            <Field field="revenue_adj" selected="True" />
+            <Field field="release_month" selected="True" />
+            <Field field="release_month_num" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Field_1" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="Int16" />
+            <Field name="imdb_id" size="9" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="String" />
+            <Field name="popularity" size="21" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="budget" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="Int32" />
+            <Field name="revenue" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="Int64" />
+            <Field name="original_title" size="104" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="cast" size="110" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="director" size="254" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="runtime" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="Int16" />
+            <Field name="genres" size="51" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="production_companies" size="184" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="release_date" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="Date" />
+            <Field name="vote_count" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="Int16" />
+            <Field name="vote_average" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="Double" />
+            <Field name="release_year" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="Int16" />
+            <Field name="budget_adj" size="18" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="revenue_adj" size="18" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="V_String" />
+            <Field name="release_month" size="9" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="String" />
+            <Field name="release_month_num" source="File: E:\Business Nanodegree\Project-5\project3-1\cleaned.csv" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="258" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>genres</Field>
+          <NumFields value="1" />
+          <Delimeters value="|" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="378" y="18" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\HIMANS~1\AppData\Local\Temp\Engine_6300_8c7e19aed4b045408ca13a3be47640c1_\Engine_6100_b5b7322ec86a4ad484fe0ba0bb865b6f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="366" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="25" MaxRecords="">E:\Business Nanodegree\Project-5\project3-1\final.xlsx|||Sheet1</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>final.xlsx
+Table=Sheet1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Data_Cleaning</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
